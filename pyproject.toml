@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "abaqus-mcp-server"
+version = "0.1.0"
+description = "MCP server for Abaqus FEM automation — model generation, job submission, log monitoring, and result extraction"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+authors = [
+    {name = "Abaqus MCP Server Contributors"}
+]
+keywords = ["abaqus", "fem", "mcp", "model-context-protocol", "simulation", "finite-element", "cae", "engineering"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Manufacturing",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+    "mcp>=1.28.0",
+    "pydantic>=2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.21",
+    "pytest-cov>=4.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/YOUR_USERNAME/abaqus-mcp-server"
+Repository = "https://github.com/YOUR_USERNAME/abaqus-mcp-server.git"
+Issues = "https://github.com/YOUR_USERNAME/abaqus-mcp-server/issues"
+Changelog = "https://github.com/YOUR_USERNAME/abaqus-mcp-server/blob/main/CHANGELOG.md"
+
+[project.scripts]
+abaqus-mcp = "abaqus_mcp_server.cli:main"
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

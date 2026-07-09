@@ -1,0 +1,61 @@
+# Abaqus intermediate files
+*.com
+*.prt
+*.sim
+*.mdl
+*.stt
+*.023
+*.cid
+*.pac
+*.abq
+*.res
+*.sel
+*.lck
+*.log
+*.sta
+*.msg
+*.dat
+*.env
+*.exception
+*.rpy
+*.rpy.*
+*.rec
+abaqus_work/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+.env.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# Testing
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# MyPy
+.mypy_cache/

@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "abaqus": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["-m", "abaqus_mcp_server.cli", "serve"],
+      "env": {
+        "ABAQUS_COMMAND": "D:\\SIMULIA\\Commands\\abaqus.bat",
+        "ABAQUS_MCP_WORKSPACE_DIR": "${CLAUDE_PROJECT_DIR:-.}/abaqus_work"
+      },
+      "timeout": 600000
+    }
+  }
+}
