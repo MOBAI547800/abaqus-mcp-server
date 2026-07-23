@@ -1,0 +1,31 @@
+{
+  "generated": "2026-07-23T11:03:55.129691",
+  "version": "V8",
+  "rule": "Same S4R belt for pretension AND contact — frame-driven actuation",
+  "belt_mesh": {
+    "node_count": 816,
+    "element_count": 750,
+    "element_type": "S4R",
+    "thickness_mm": 1.0,
+    "width_mm": 30.0,
+    "path_length_mm": 545.1243448245963,
+    "material": "BeltMat",
+    "E_MPa": 4000.0,
+    "nu": 0.3
+  },
+  "coordinate_system": {
+    "belt_width_direction": "Global X",
+    "belt_travel_plane": "YZ",
+    "workpiece_axis": "Global X",
+    "pulley_axis": "Global X",
+    "workpiece_axis_dot_belt_width": 1.0,
+    "workpiece_axis_dot_belt_travel": 0.0
+  },
+  "actuation": "Frame rotation about big pulley center — NO BELTMID closure",
+  "v7_comparison": {
+    "v7_actuation": "BELTMID uniform Z-displacement (DEPRECATED)",
+    "v7_belt_orientation": "Belt travel parallel to workpiece axis (WRONG)",
+    "v8_actuation": "Frame rotation about big pulley center",
+    "v8_belt_orientation": "Belt travel perpendicular to workpiece axis (CORRECTED)"
+  }
+}

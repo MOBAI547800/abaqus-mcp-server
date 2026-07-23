@@ -1,0 +1,57 @@
+# V8 Belt Geometry & Two-Pulley Path
+# Generated: 2026-07-23
+# Source: V8 prompt §11 — parameterized isolated mesh generation
+
+belt_geometry:
+  description: "Two-pulley belt path in YZ plane, width along X"
+
+  big_pulley:
+    diameter_mm: 63.0
+    radius_mm: 31.5
+    center_rough: [80.0, 31.5, 0.0]
+    center_fine: [80.0, -31.5, 0.0]
+    type: "Analytical rigid or discrete rigid"
+    axis: "Global X"
+
+  small_pulley:
+    diameter_mm: 24.0
+    radius_mm: 12.0
+    center_distance_mm: 207.0
+    type: "Analytical rigid or discrete rigid"
+    axis: "Global X"
+
+  belt_path:
+    description: "Two tangent lines + two wrap arcs in YZ plane"
+    segments:
+      - type: "Upper tangent line"
+        description: "Common external tangent between big pulley top and small pulley top"
+      - type: "Lower tangent line"
+        description: "Common external tangent between big pulley bottom and small pulley bottom"
+      - type: "Big pulley wrap arc"
+        angle_deg: "~180° minus tangent angle"
+      - type: "Small pulley wrap arc"
+        angle_deg: "~180° minus tangent angle"
+
+  belt_shell:
+    element_type: S4R
+    thickness_mm: 1.0
+    width_mm: 30.0
+    width_direction: "Global X"
+    mesh:
+      along_path: "Seeded to achieve ~2mm element size in contact zone"
+      along_width: "Seeded to achieve ~2mm element size (15 elements across 30mm)"
+    local_orientation:
+      direction_1: "Along belt arc-length (s-direction)"
+      direction_2: "Along X (width direction)"
+      normal: "Continuous outward from belt path"
+
+  # V8 KEY CHANGE from V7:
+  # V7: Flat rectangular belt, 200mm x 30mm, nodes in plane
+  # V8: Two-pulley wrapped belt path in YZ plane, S4R shell following curved path
+  # This enables frame-driven contact via rotation about big pulley center
+  v7_to_v8_change: "Flat sheet → wrapped two-pulley path; belt travel in YZ plane not along workpiece axis"
+
+  # Contact zone on belt: the straight tangent section facing the workpiece
+  contact_zone:
+    description: "Straight tangent segment of belt path closest to workpiece"
+    approximate_length_mm: "~80mm along belt path"

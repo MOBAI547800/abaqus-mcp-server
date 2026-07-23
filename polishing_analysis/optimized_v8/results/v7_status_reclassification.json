@@ -1,0 +1,48 @@
+{
+  "generated": "2026-07-23T10:45:00",
+  "version": "V8",
+  "source": "Gate V8-0 — V7 audit and reclassification",
+  "reclassification": {
+    "V7-0": {"v7_status": "PASS", "v8_status": "PASS_INHERITED", "description": "V6 audit & V7 initialization"},
+    "V7-1": {"v7_status": "PASS", "v8_status": "PASS_BELT_LINEAGE_AND_PRETENSION", "description": "Belt lineage verified, S4R in pretension and contact, pretension calibrated 90.23N/60.18N"},
+    "rough_cl1.5": {"v7_status": "COMPLETED", "v8_status": "DIAGNOSTIC_DIRECT_BELTMID_CLOSURE", "description": "Closure=1.5mm, CPRESS max=448.6 MPa, 349 closed faces — diagnostic only"},
+    "RawMax_CPRESS_448.6": {"v7_status": "EXTRACTED", "v8_status": "NOT_AREA_WEIGHTED_NOT_VALIDATED", "description": "Raw node-based CPRESS max, not area-weighted"},
+    "349_closed_faces": {"v7_status": "EXTRACTED", "v8_status": "CONTACT_ESTABLISHED_DIAGNOSTIC", "description": "Contact established but via deprecated uniform closure"},
+    "BELTMID_uniform_Z_disp": {"v7_status": "CURRENT_ACTUATION", "v8_status": "DEPRECATED_CONTACT_ACTUATION", "reason": "Uniform workpiece displacement = BELTMID uniform closure — not frame-driven"},
+    "belt_parallel_workpiece_axis": {"v7_status": "CURRENT_COORDINATE", "v8_status": "REQUIRES_COORDINATE_AUDIT", "reason": "Belt length direction parallel to workpiece axis — creates non-physical line contact"},
+    "dual_end_Encastre": {"v7_status": "CURRENT_BC", "v8_status": "ENGINEERING_BASELINE_REQUIRES_SENSITIVITY", "reason": "Double Encastre vs double-center engineering baseline comparison needed"},
+    "V7-2": {"v7_status": "IN_PROGRESS", "v8_status": "REOPENED_ACTUATION_AND_COORDINATE_MODEL", "reason": "Contact actuation and coordinate system must be rebuilt for V8"},
+    "V7-3_to_V7-8": {"v7_status": "NOT_STARTED", "v8_status": "NOT_STARTED"},
+    "cl2.0_to_3.5_scans": {"v7_status": "NOT_SUBMITTED", "v8_status": "STOPPED_DEPRECATED_CLOSURE", "reason": "BELTMID uniform closure >1.5mm is decommissioned"}
+  },
+  "v7_closure_scans_stopped": [
+    "contact_v7_rough_scan_cl1p0",
+    "contact_v7_rough_scan_cl2p0",
+    "contact_v7_rough_scan_cl2p5",
+    "contact_v7_rough_scan_cl3p0",
+    "contact_v7_rough_scan_cl3p5",
+    "contact_v7_fine_scan_cl1p0",
+    "contact_v7_fine_scan_cl2p0",
+    "contact_v7_fine_scan_cl2p5",
+    "contact_v7_fine_scan_cl3p0",
+    "contact_v7_fine_scan_cl3p5"
+  ],
+  "v7_retained_as_diagnostic": [
+    "contact_v7_rough_scan_cl0p1", "contact_v7_rough_scan_cl0p2", "contact_v7_rough_scan_cl0p3",
+    "contact_v7_rough_scan_cl0p5", "contact_v7_rough_scan_cl0p8", "contact_v7_rough_scan_cl1p2", "contact_v7_rough_scan_cl1p5",
+    "contact_v7_fine_scan_cl0p1", "contact_v7_fine_scan_cl0p2", "contact_v7_fine_scan_cl0p3",
+    "contact_v7_fine_scan_cl0p5", "contact_v7_fine_scan_cl0p8", "contact_v7_fine_scan_cl1p2", "contact_v7_fine_scan_cl1p5"
+  ],
+  "v8_inherited_assets": [
+    "AISI_304_material_card", "DOE_17_run_design", "General_Contact_protocol",
+    "S4R_belt_element_type", "Pretension_calibration_method", "Force_target_baselines",
+    "Contact_physics_validation_limits", "Belt_lineage_enforcement_rules",
+    "Experimental_run_sheet_CSV", "Solver_budget_framework"
+  ],
+  "v8_not_inherited": [
+    "BELTMID_uniform_closure_actuation",
+    "V7_coordinate_system (belt || workpiece axis)",
+    "RawMax_CPRESS_as_primary_response",
+    "Dual_end_Encastre_as_only_boundary"
+  ]
+}

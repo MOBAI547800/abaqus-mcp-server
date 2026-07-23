@@ -1,0 +1,37 @@
+{
+  "odb_path": "D:/mcp/abaqus_mcp/abaqus_work/contact_v9_rough_x2_50.odb",
+  "steps": {
+    "Pretension": {
+      "num_frames": 4,
+      "total_time": 0.0,
+      "cstatus": {
+        "total": 3763,
+        "contact": 451,
+        "frac": 0.11985118256710071
+      },
+      "cpress": {
+        "nz": 0,
+        "max": 0,
+        "mean": 0
+      }
+    },
+    "FrameEngage": {
+      "num_frames": 4,
+      "total_time": 1.0,
+      "cstatus": {
+        "total": 3763,
+        "contact": 435,
+        "frac": 0.1155992559128355
+      },
+      "cpress": {
+        "nz": 0,
+        "max": 0,
+        "mean": 0
+      },
+      "peeq": {
+        "max": 0,
+        "nz_frac": 0.0
+      }
+    }
+  }
+}

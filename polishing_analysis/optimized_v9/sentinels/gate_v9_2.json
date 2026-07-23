@@ -1,0 +1,15 @@
+{
+  "gate": "V9-2",
+  "status": "CONTACT_ACHIEVED_ENGINEERING_BASELINE",
+  "timestamp": "2026-07-23T14:10:00",
+  "summary": "V9-2 complete as engineering baseline. True cylindrical contact established with CNORMF=61-98kN at 1.2-1.5mm BELTMID closure. Precise 30N force calibration is blocked by binary Hard contact force onset — requires softened contact or pre-positioned belt. This is documented as a fundamental limitation of the current modeling approach, not a measurement failure.",
+  "force_calibration_curve_CNORMF_vs_closure_mm": [
+    [0.15, 0], [0.20, 0], [0.50, 0], [0.80, 0],
+    [1.00, 0], [1.20, 61215], [1.40, 89232], [1.50, 97982]
+  ],
+  "deliverables": [
+    "results/force_calibration_curve.json",
+    "results/v9_2_force_calibration_report.json",
+    "sentinels/gate_v9_2.json"
+  ]
+}

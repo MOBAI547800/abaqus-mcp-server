@@ -1,0 +1,36 @@
+# V8 Contact Force Targets
+# Generated: 2026-07-23
+# Source: V8 prompt §19 — frame zero-offset calibration targets
+
+force_targets:
+  source: UNCALIBRATED_ENGINEERING_BASELINE
+  description: "Engineering baseline targets — NOT experimentally calibrated"
+
+  rough:
+    center_normal_force_target_N: 30.0
+    relative_tolerance_pct: 3.0
+    absolute_tolerance_N: 0.5
+    pretension_N: 90.0
+
+  fine:
+    center_normal_force_target_N: 20.0
+    relative_tolerance_pct: 3.0
+    absolute_tolerance_N: 0.5
+    pretension_N: 60.0
+
+  calibration_method: "Frame zero-offset angle calibration, NOT BELTMID closure"
+  calibration_parameter: "frame_zero_offset_deg (additional rotation beyond x2 position angle)"
+
+  triple_force_check:
+    max_error_pct: 5.0
+    methods:
+      - "Frame RP reaction force projected along local contact normal"
+      - "Workpiece support reaction force (opposite direction)"
+      - "CPRESS area-weighted integral (General Contact normal force)"
+
+  zero_offset_calibration:
+    method: "Bisection on frame_zero_offset_deg"
+    bracket_search: "Start from 0 deg; expand bracket in 0.01 deg steps"
+    max_iterations: 20
+    convergence_criteria: "|F_normal - F_target| / F_target <= 3% OR |F_normal - F_target| <= 0.5N"
+    post_calibration: "Zero offset FIXED; NOT recalibrated for x2=35 or x2=50"

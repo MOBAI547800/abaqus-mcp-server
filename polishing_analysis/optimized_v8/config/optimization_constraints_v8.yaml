@@ -1,0 +1,48 @@
+# V8 Optimization Constraints
+# Generated: 2026-07-23
+# Source: V8 prompt §34
+
+response_variables:
+  - NormalForce_N
+  - MeanCPRESS_MPa
+  - P95CPRESS_MPa
+  - P99CPRESS_MPa
+  - ContactArea_mm2
+  - TotalRemovedVolume_mm3
+  - EquivalentRadialRemoval_um
+  - TotalEffectiveMRR_mm3_per_min
+  - FullCycleAverageMRR_mm3_per_min
+  - MaxLocalWearDepth_um
+  - WearUniformityCV
+  - RoughnessProxyIndex
+  - Ra_predicted_um
+  - ResidualStress_MPa
+  - MaxTensileResidualStress_MPa
+  - MaxCompressiveResidualStress_MPa
+  - MaxSurfaceTemperature_C
+
+quadratic_model:
+  formula: "Y = b0 + b1*X1 + b2*X2 + b3*X3 + b12*X1*X2 + b13*X1*X3 + b23*X2*X3 + b11*X1^2 + b22*X2^2 + b33*X3^2"
+
+regression_rules:
+  - "Only use SOLVER_VALID + physically valid responses"
+  - "Constant responses marked NON_IDENTIFIABLE_RESPONSE"
+  - "Cached center points NOT treated as independent pure error"
+  - "Output R^2, adjusted R^2, predicted R^2, and cross-validation"
+
+optimization_constraints:
+  target_radial_removal_um: REQUIRED_USER_INPUT
+  max_surface_temperature_C: REQUIRED_USER_INPUT
+  max_tensile_residual_stress_MPa: REQUIRED_USER_INPUT
+  target_Ra_um: REQUIRED_USER_INPUT
+
+  missing_targets_action: "Output Pareto front only — do NOT claim unique optimum"
+  invalid_responses_action: "OPTIMIZATION_BLOCKED_BY_INVALID_RESPONSES"
+  recommended_point_requirement: "Must be recomputed — not just predicted"
+
+pareto_front:
+  objectives:
+    - "Minimize MaxSurfaceTemperature_C"
+    - "Minimize MaxTensileResidualStress_MPa"
+    - "Maximize TotalEffectiveMRR_mm3_per_min"
+    - "Minimize Ra_predicted_um (when calibrated)"

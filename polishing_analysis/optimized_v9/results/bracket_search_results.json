@@ -1,0 +1,42 @@
+[
+  {
+    "closure": 0.0001,
+    "path": "D:/mcp/abaqus_mcp/abaqus_work/contact_v9_rough_bracket_0p000100.odb",
+    "steps": {
+      "Engage": {
+        "CSTATUS_contact": 450,
+        "CSTATUS_total": 3853,
+        "CNORMF_sum_N": 0.0,
+        "CNORMF_count": 0
+      }
+    }
+  },
+  {
+    "closure": 0.0005,
+    "path": "D:/mcp/abaqus_mcp/abaqus_work/contact_v9_rough_bracket_0p000500.odb",
+    "steps": {
+      "Engage": {
+        "CSTATUS_contact": 450,
+        "CSTATUS_total": 3853,
+        "CNORMF_sum_N": 0.0,
+        "CNORMF_count": 0
+      }
+    }
+  },
+  {
+    "closure": 0.001,
+    "path": "D:/mcp/abaqus_mcp/abaqus_work/contact_v9_rough_bracket_0p001000.odb",
+    "steps": {
+      "Engage": {
+        "CSTATUS_contact": 301,
+        "CSTATUS_total": 3853,
+        "CNORMF_sum_N": 0.0,
+        "CNORMF_count": 0
+      }
+    }
+  },
+  {
+    "closure": 0.005,
+    "status": "ODB_NOT_FOUND"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "closure_mm": 0.15,
+    "CNORMF_N": 0
+  },
+  {
+    "closure_mm": 0.2,
+    "CNORMF_N": 0
+  },
+  {
+    "closure_mm": 0.3,
+    "CNORMF_N": 0
+  },
+  {
+    "closure_mm": 0.4,
+    "CNORMF_N": 0
+  },
+  {
+    "closure_mm": 0.5,
+    "CNORMF_N": 0
+  },
+  {
+    "closure_mm": 0.8,
+    "CNORMF_N": 0
+  },
+  {
+    "closure_mm": 1.0,
+    "CNORMF_N": 0
+  },
+  {
+    "closure_mm": 1.2,
+    "CNORMF_N": 61215.078985956156
+  },
+  {
+    "closure_mm": 1.4,
+    "CNORMF_N": 89231.50808842019
+  }
+]

@@ -1,0 +1,37 @@
+# -*- coding: mbcs -*-
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.Model(name='CylinderWorkpiece_v9')
+mdb.models['CylinderWorkpiece_v9'].Part(dimensionality=THREE_D, name=
+    'Workpiece', type=DEFORMABLE_BODY)
+mdb.models['CylinderWorkpiece_v9'].ConstrainedSketch(name='profile', sheetSize=
+    100.0)
+mdb.models['CylinderWorkpiece_v9'].sketches['profile'].CircleByCenterPerimeter(
+    center=(0.0, 0.0), point1=(13.0, 0.0))
+mdb.models['CylinderWorkpiece_v9'].parts['Workpiece'].BaseSolidExtrude(depth=
+    160.0, sketch=mdb.models['CylinderWorkpiece_v9'].sketches['profile'])
+mdb.models['CylinderWorkpiece_v9'].parts['Workpiece'].setMeshControls(regions=(
+    mdb.models['CylinderWorkpiece_v9'].parts['Workpiece'].cells[0], ), 
+    technique=STRUCTURED)
+#* Error: Some regions cannot be Mapped.
+mdb.models['CylinderWorkpiece_v9'].parts['Workpiece'].setMeshControls(regions=(
+    mdb.models['CylinderWorkpiece_v9'].parts['Workpiece'].cells[0], ), 
+    technique=SWEEP)
+mdb.models['CylinderWorkpiece_v9'].parts['Workpiece'].seedPart(size=3.0)
+mdb.models['CylinderWorkpiece_v9'].parts['Workpiece'].setElementType(elemTypes=
+    (ElemType(elemCode=C3D8R, elemLibrary=STANDARD), ), regions=
+    mdb.models['CylinderWorkpiece_v9'].parts['Workpiece'].cells)
+#* TypeError: regions; found CellArray, expecting Set
+mdb.models['CylinderWorkpiece_v9'].parts['Workpiece'].generateMesh()
+# Save by Administrator on 2026_07_23-11.50.23; build 2025 2024_09_20-21.00.46 RELr427 198590

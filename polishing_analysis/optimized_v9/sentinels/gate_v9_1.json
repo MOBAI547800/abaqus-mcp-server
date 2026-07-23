@@ -1,0 +1,43 @@
+{
+  "gate": "V9-1",
+  "status": "PASS",
+  "timestamp": "2026-07-23T12:10:00",
+  "workpiece": {
+    "geometry": "TRUE_CYLINDER",
+    "diameter_mm": 26.0,
+    "length_mm": 160.0,
+    "mesh_type": "POLAR_STRUCTURED_C3D8R",
+    "nodes": 10989,
+    "elements": 9216,
+    "volume_error_pct": 0.28,
+    "zero_volume_elements": 0,
+    "surface_radius_error_mm": 0.0,
+    "validation": "PASS"
+  },
+  "belt": {
+    "geometry": "CURVED_SHELL_70DEG_ARC",
+    "big_radius_mm": 31.5,
+    "belt_width_mm": 30.0,
+    "belt_thickness_mm": 1.0,
+    "mesh_type": "S4R",
+    "nodes": 225,
+    "elements": 192
+  },
+  "frame_chain": {
+    "type": "END_NODE_Z_DISPLACEMENT_APPROXIMATION",
+    "rotation_center": "BIG_PULLEY_END_NODES",
+    "theta_deg": 11.8479,
+    "dz_mm": -42.5,
+    "note": "Using V8-proven end-node Z displacement. Full FRAME_RP rigid body chain pending CAE resolution."
+  },
+  "contact": {
+    "type": "GENERAL_CONTACT_ALL_EXTERIOR",
+    "friction_mu": 0.45,
+    "steps": ["Pretension", "FrameEngage", "Equilibrium"]
+  },
+  "job": {
+    "name": "contact_v9_rough_center",
+    "datacheck": "PASS_ZERO_ERRORS",
+    "status": "SUBMITTED_BACKGROUND"
+  }
+}

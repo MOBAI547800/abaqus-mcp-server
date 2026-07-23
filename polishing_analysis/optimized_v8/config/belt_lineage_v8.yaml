@@ -1,0 +1,52 @@
+# V8 Belt Lineage Enforcement
+# Generated: 2026-07-23
+# Rule: Pretension, frame swing, and contact MUST use identical belt
+
+belt_lineage:
+  version: "V8"
+  rule: "Same belt part, S4R elements, mesh connectivity, section, thickness, material, and local orientation for all analysis stages"
+
+  required_identical:
+    - belt_part_name
+    - element_type: S4R
+    - node_count
+    - element_count
+    - node_connectivity
+    - section_type: Shell
+    - thickness_mm
+    - material_name
+    - material_properties
+    - local_orientation
+    - pulley_path_geometry
+    - mesh_hash
+
+  allowed_differences:
+    - "Step definitions (pretension vs contact vs thermal)"
+    - "Boundary conditions (vary by analysis stage)"
+    - "Contact interactions (added for contact analysis)"
+    - "Output requests (vary by analysis type)"
+
+  forbidden:
+    - "Different belt mesh for pretension and contact"
+    - "Different element type (e.g., switching S4R ↔ C3D8R)"
+    - "Different belt geometry between stages"
+    - "Different section thickness"
+    - "Different material definition"
+
+  verification:
+    method: "SHA-256 hash of belt mesh nodes, elements, and connectivity"
+    manifest_path: "results/belt_lineage_manifest_v8.json"
+    check_on_every_build: true
+
+  mesh_hash_algorithm:
+    input_fields:
+      - "All belt node coordinates (sorted by node ID)"
+      - "All belt element connectivities (sorted by element ID)"
+      - "Element type string"
+      - "Shell thickness"
+    hash_type: "SHA-256"
+
+  # V7 lineage confirmed: S4R used in both pretension (belt_v7_pretension_*) and contact (contact_v7_*_center_s4r)
+  # V8 must maintain this while adding frame-driven actuation
+  v7_lineage_status: "MAINTAINED — S4R element type consistent"
+  v8_lineage_requirement: "EXTENDED — Add frame swing geometry; S4R belt must be the SAME part across all stages"

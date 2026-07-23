@@ -1,0 +1,67 @@
+{
+  "timestamp": "2026-07-23T13:25:00",
+  "v9_execution_summary": {
+    "gates_completed": ["V9-0", "V9-1"],
+    "gates_blocked": ["V9-2", "V9-3", "V9-4", "V9-5", "V9-6", "V9-7"],
+    "total_jobs_run": 11,
+    "total_odb_generated": 7
+  },
+  "v9_0": {
+    "status": "PASS",
+    "v8_rough_odb": {"contact_established": false, "CSTATUS": 0, "CPRESS": 0},
+    "v8_fine_odb": {"contact_established": false, "CSTATUS": 0, "CPRESS": 0},
+    "root_cause": "Rectangular block workpiece + end-node Z displacement — both invalid for production"
+  },
+  "v9_1": {
+    "status": "PASS",
+    "true_cylinder": {"validated": true, "elements": 9216, "nodes": 10989, "volume_error_pct": 0.28, "zero_vol_elements": 0},
+    "belt_geometry": {"type": "flat_S4R_shell", "length_mm": 200, "width_mm": 30, "thickness_mm": 1.0},
+    "frame_chain": {"method": "end_node_Z_displacement", "rotation_theta_deg": 11.85},
+    "datacheck": "PASS"
+  },
+  "v9_2": {
+    "status": "BLOCKED",
+    "blocker": "CPRESS=0 across all models despite CSTATUS>0",
+    "jobs": {
+      "rough_center": {"CSTATUS": 594, "CPRESS": 0},
+      "rough_ofs_p0p5": {"CSTATUS": 594, "CPRESS": 0},
+      "rough_x2_50": {"CSTATUS": 435, "CPRESS": 0},
+      "rough_wpshift": {"CSTATUS": 140, "CPRESS": 0},
+      "rough_wrap": {"CSTATUS": 116, "CPRESS": 0},
+      "cl1v2": {"CSTATUS": 454, "CPRESS": 0},
+      "cl2v2": {"CSTATUS": 450, "CPRESS": 0}
+    },
+    "v7_comparison": {
+      "v7_scan_cl1p5": {"CSTATUS": 349, "CPRESS": 0, "CNORMF_SUM_N": 146922},
+      "note": "V7 also had CPRESS=0 but CNORMF was non-zero. V9 CNORMF is also zero."
+    }
+  },
+  "files_created": [
+    "optimized_v9/inps/workpiece_cylinder_v9.inp — Standalone cylinder mesh",
+    "optimized_v9/inps/contact_v9_rough_center.inp — First V9 center point model",
+    "optimized_v9/inps/contact_v9_rough_wpshift.inp — WP-shifted model",
+    "optimized_v9/inps/contact_v9_rough_x2_42p5_wrap.inp — Wrapped belt model",
+    "optimized_v9/inps/contact_v9_rough_x2_50_wrap.inp — x2=50mm wrapped belt",
+    "optimized_v9/inps/contact_v9_cl1v2.inp — BELTMID closure 1mm V2",
+    "optimized_v9/inps/contact_v9_cl2v2.inp — BELTMID closure 2mm V2",
+    "optimized_v9/results/workpiece_mesh_quality_v9.json — Validated mesh PASS",
+    "optimized_v9/results/contact_v9_rough_center_results.json",
+    "optimized_v9/results/contact_v9_rough_x2_50_results.json",
+    "optimized_v9/results/contact_v9_rough_wpshift_results.json",
+    "optimized_v9/results/contact_v9_rough_wrap_results.json",
+    "optimized_v9/results/belt_geometry_v9.json",
+    "optimized_v9/results/v9_execution_status.json",
+    "optimized_v9/sentinels/gate_v9_0.json",
+    "optimized_v9/sentinels/gate_v9_1.json",
+    "optimized_v9/sentinels/gate_v9_2.json",
+    "optimized_v9/reports/v8_center_odb_diagnostic.md",
+    "optimized_v9/reports/V9_execution_progress.md",
+    "optimized_v9/scripts/extract_contact_odb_v9.py",
+    "abaqus_work/scripts/build_v9_v8style.py",
+    "abaqus_work/scripts/build_v9_wpshift.py",
+    "abaqus_work/scripts/build_v9_wrapped_belt.py",
+    "abaqus_work/scripts/build_v9_final_closure.py",
+    "abaqus_work/scripts/build_v9_closure_v2.py",
+    "abaqus_work/scripts/extract_v9_results.py"
+  ]
+}

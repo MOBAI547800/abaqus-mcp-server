@@ -1,0 +1,40 @@
+# V8 Contact Validation Limits
+# Generated: 2026-07-23
+# Source: V8 prompt §24
+
+contact_physics_thresholds:
+  mean_cpress_min_MPa: 0.1
+  mean_cpress_max_MPa: 50.0
+  p95_cpress_max_MPa: 100.0
+  p99_cpress_warning_MPa: 230.0
+  max_normal_force_balance_error_pct: 5.0
+  max_pretension_error_pct: 2.0
+  max_target_force_error_pct: 3.0
+  max_stabilization_energy_ratio_pct: 5.0
+  max_contact_zone_peeq_fraction_pct: 1.0
+  max_relative_belt_deformation_mm: 5.0
+  max_compressive_membrane_area_fraction_pct: 5.0
+  max_frame_rotation_pretension_change_pct: 5.0
+
+  note: "These thresholds apply to macroscopic continuous belt — NOT single-grain micro-pressure"
+
+effective_contact_threshold:
+  cpress_min: "max(0.01 MPa, 0.001 * P95)"
+  description: "Nodes/elements below this threshold excluded from contact statistics"
+
+robust_pressure_outputs:
+  required:
+    - AreaWeightedMean_MPa
+    - P50_MPa
+    - P90_MPa
+    - P95_MPa
+    - P99_MPa
+    - InteriorMax_MPa
+    - RawMax_MPa
+    - ContactArea_mm2
+    - ContactWidth_mm
+    - PressureCV
+    - PressureIntegratedNormalForce_N
+
+  method: "Integration-point or facet-area weighted; nodal CPRESS requires tributary area computation"
+  raw_max_usage: "Singularity diagnosis only — NOT for heat flux, MRR, DOE response, or optimization constraint"

@@ -59,3 +59,7 @@ coverage.xml
 
 # MyPy
 .mypy_cache/
+*.odb
+*.odb_f
+*.lck
+*.023

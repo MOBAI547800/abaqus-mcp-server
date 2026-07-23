@@ -1,0 +1,3065 @@
+{
+  "odb_path": "D:/mcp/abaqus_mcp/abaqus_work/jobs/contact_v8_rough_center.odb",
+  "status": "EXTRACTED",
+  "steps": [
+    {
+      "name": "Pretension",
+      "procedure": "*STATIC",
+      "num_frames": 16,
+      "total_time": 0.0,
+      "frames": [
+        {
+          "frame_index": 0,
+          "frame_value": 0.0,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 1,
+          "frame_value": 0.009999999776482582,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 2,
+          "frame_value": 0.019999999552965164,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 3,
+          "frame_value": 0.03500000014901161,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 4,
+          "frame_value": 0.057500001043081284,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 5,
+          "frame_value": 0.09125000238418579,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 6,
+          "frame_value": 0.1418749988079071,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 7,
+          "frame_value": 0.21781249344348907,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 8,
+          "frame_value": 0.3178125023841858,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 9,
+          "frame_value": 0.4178124964237213,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 10,
+          "frame_value": 0.5178124904632568,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 11,
+          "frame_value": 0.6178125143051147,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 12,
+          "frame_value": 0.7178124785423279,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 13,
+          "frame_value": 0.8178125023841858,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 14,
+          "frame_value": 0.9178125262260437,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 15,
+          "frame_value": 1.0,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            }
+          }
+        }
+      ],
+      "field_outputs_available": [
+        "CPRESS   General_Contact_Faces/General_Contact_Faces",
+        "CSHEAR1  General_Contact_Faces/General_Contact_Faces",
+        "CSHEAR2  General_Contact_Faces/General_Contact_Faces",
+        "CSTATUS  General_Contact_Faces/General_Contact_Faces",
+        "RF",
+        "RM",
+        "S",
+        "SF",
+        "SM",
+        "U",
+        "UR"
+      ]
+    },
+    {
+      "name": "FrameEngage",
+      "procedure": "*STATIC",
+      "num_frames": 16,
+      "total_time": 1.0,
+      "frames": [
+        {
+          "frame_index": 0,
+          "frame_value": 0.0,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 1,
+          "frame_value": 0.009999999776482582,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 2,
+          "frame_value": 0.019999999552965164,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 3,
+          "frame_value": 0.03500000014901161,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 4,
+          "frame_value": 0.057500001043081284,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 5,
+          "frame_value": 0.09125000238418579,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 6,
+          "frame_value": 0.1418749988079071,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 7,
+          "frame_value": 0.21781249344348907,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 8,
+          "frame_value": 0.3178125023841858,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 9,
+          "frame_value": 0.4178124964237213,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 10,
+          "frame_value": 0.5178124904632568,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 11,
+          "frame_value": 0.6178125143051147,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 12,
+          "frame_value": 0.7178124785423279,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 13,
+          "frame_value": 0.8178125023841858,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 14,
+          "frame_value": 0.9178125262260437,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 15,
+          "frame_value": 1.0,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        }
+      ],
+      "field_outputs_available": [
+        "AC YIELD",
+        "CNORMF   General_Contact_Faces/General_Contact_Faces",
+        "CPRESS   General_Contact_Faces/General_Contact_Faces",
+        "CSHEAR1  General_Contact_Faces/General_Contact_Faces",
+        "CSHEAR2  General_Contact_Faces/General_Contact_Faces",
+        "CSHEARF  General_Contact_Faces/General_Contact_Faces",
+        "CSTATUS  General_Contact_Faces/General_Contact_Faces",
+        "PEEQ",
+        "RF",
+        "RM",
+        "S",
+        "SF",
+        "SM",
+        "U",
+        "UR"
+      ]
+    },
+    {
+      "name": "Equilibrium",
+      "procedure": "*STATIC",
+      "num_frames": 16,
+      "total_time": 2.0,
+      "frames": [
+        {
+          "frame_index": 0,
+          "frame_value": 0.0,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 1,
+          "frame_value": 0.009999999776482582,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 2,
+          "frame_value": 0.019999999552965164,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 3,
+          "frame_value": 0.03500000014901161,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 4,
+          "frame_value": 0.057500001043081284,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 5,
+          "frame_value": 0.09125000238418579,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 6,
+          "frame_value": 0.1418749988079071,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 7,
+          "frame_value": 0.21781249344348907,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 8,
+          "frame_value": 0.3178125023841858,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 9,
+          "frame_value": 0.4178124964237213,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 10,
+          "frame_value": 0.5178124904632568,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 11,
+          "frame_value": 0.6178125143051147,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 12,
+          "frame_value": 0.7178124785423279,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 13,
+          "frame_value": 0.8178125023841858,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 14,
+          "frame_value": 0.9178125262260437,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        },
+        {
+          "frame_index": 15,
+          "frame_value": 1.0,
+          "time": null,
+          "fields": {
+            "CPRESS": {
+              "description": "Contact pressure",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CSTATUS": {
+              "description": "Contact Status     ",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ],
+              "max": -3.4028234663852886e+38,
+              "min": -3.4028234663852886e+38,
+              "mean": -3.4028234663852886e+38,
+              "nonzero_count": 1485
+            },
+            "U": {
+              "description": "Spatial displacement",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "RF": {
+              "description": "Reaction force",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            },
+            "S": {
+              "description": "Stress components",
+              "type": "TENSOR_3D_PLANAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': (({'description': 'SNEG, (fraction = -1.0)', 'number': 1}), ({'description': 'SPOS, (fraction = 1.0)', 'number': 5}))})"
+              ]
+            },
+            "PEEQ": {
+              "description": "Equivalent plastic strain",
+              "type": "SCALAR",
+              "locations": [
+                "({'position': INTEGRATION_POINT, 'sectionPoints': ()})"
+              ],
+              "max": 0.0,
+              "min": 0.0,
+              "mean": 0.0,
+              "nonzero_count": 0
+            },
+            "CNORMF": {
+              "description": "Contact Normal Force Vector",
+              "type": "VECTOR",
+              "locations": [
+                "({'position': NODAL, 'sectionPoints': ()})"
+              ]
+            }
+          }
+        }
+      ],
+      "field_outputs_available": [
+        "AC YIELD",
+        "CNORMF   General_Contact_Faces/General_Contact_Faces",
+        "CPRESS   General_Contact_Faces/General_Contact_Faces",
+        "CSHEAR1  General_Contact_Faces/General_Contact_Faces",
+        "CSHEAR2  General_Contact_Faces/General_Contact_Faces",
+        "CSHEARF  General_Contact_Faces/General_Contact_Faces",
+        "CSTATUS  General_Contact_Faces/General_Contact_Faces",
+        "PEEQ",
+        "RF",
+        "RM",
+        "S",
+        "SF",
+        "SM",
+        "U",
+        "UR"
+      ]
+    }
+  ],
+  "instances": [
+    {
+      "name": "BI",
+      "num_nodes": 459,
+      "num_elements": 400
+    },
+    {
+      "name": "WI",
+      "num_nodes": 1845,
+      "num_elements": 1280
+    }
+  ]
+}

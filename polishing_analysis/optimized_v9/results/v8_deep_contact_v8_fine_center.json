@@ -1,0 +1,393 @@
+{
+  "odb_path": "D:/mcp/abaqus_mcp/abaqus_work/jobs/contact_v8_fine_center.odb",
+  "contact_established": false,
+  "steps": {
+    "Pretension": {
+      "num_frames": 16,
+      "total_time": 0.0,
+      "cstatus": {
+        "total_points": 1485,
+        "contact_points": 0,
+        "contact_fraction": 0.0,
+        "contact_established": false
+      },
+      "cpress": {
+        "total_points": 1485,
+        "nonzero_points": 0,
+        "max": 0.0,
+        "min": 0.0,
+        "mean": 0.0
+      },
+      "reaction_forces": [
+        {
+          "nodeLabel": 452,
+          "magnitude": 21.37369155883789,
+          "data": "[-3.5414832, 21.078249, 1.2901243e-18]"
+        },
+        {
+          "nodeLabel": 458,
+          "magnitude": 21.37369155883789,
+          "data": "[3.5414832, 21.078249, -4.4173682e-18]"
+        },
+        {
+          "nodeLabel": 2,
+          "magnitude": 21.370508193969727,
+          "data": "[-3.5409658, -21.075108, -2.3430582e-18]"
+        },
+        {
+          "nodeLabel": 8,
+          "magnitude": 21.370508193969727,
+          "data": "[3.5409658, -21.075108, -8.7366105e-18]"
+        },
+        {
+          "nodeLabel": 454,
+          "magnitude": 19.209171295166016,
+          "data": "[-0.89893967, 19.188126, -9.391521e-19]"
+        },
+        {
+          "nodeLabel": 456,
+          "magnitude": 19.209171295166016,
+          "data": "[0.89893967, 19.188126, -1.6500574e-18]"
+        },
+        {
+          "nodeLabel": 4,
+          "magnitude": 19.20625877380371,
+          "data": "[-0.8988098, -19.185215, 2.300067e-18]"
+        },
+        {
+          "nodeLabel": 6,
+          "magnitude": 19.20625877380371,
+          "data": "[0.8988098, -19.185215, 2.8239657e-18]"
+        },
+        {
+          "nodeLabel": 453,
+          "magnitude": 18.89276123046875,
+          "data": "[-1.8768665, 18.799303, -5.425507e-19]"
+        },
+        {
+          "nodeLabel": 457,
+          "magnitude": 18.89276123046875,
+          "data": "[1.8768665, 18.799303, -2.5146344e-18]"
+        }
+      ],
+      "displacements": [
+        {
+          "nodeLabel": 451,
+          "magnitude": 0.27000001072883606,
+          "data": "[2.7785e-41, 0.27, 0.0]"
+        },
+        {
+          "nodeLabel": 452,
+          "magnitude": 0.27000001072883606,
+          "data": "[3.6384294e-36, 0.27, 0.0]"
+        },
+        {
+          "nodeLabel": 453,
+          "magnitude": 0.27000001072883606,
+          "data": "[2.9479454e-36, 0.27, -0.0]"
+        },
+        {
+          "nodeLabel": 454,
+          "magnitude": 0.27000001072883606,
+          "data": "[2.7674223e-36, 0.27, 0.0]"
+        },
+        {
+          "nodeLabel": 455,
+          "magnitude": 0.27000001072883606,
+          "data": "[2.2243924e-36, 0.27, -0.0]"
+        },
+        {
+          "nodeLabel": 456,
+          "magnitude": 0.27000001072883606,
+          "data": "[1.8684832e-36, 0.27, -0.0]"
+        },
+        {
+          "nodeLabel": 457,
+          "magnitude": 0.27000001072883606,
+          "data": "[1.0710901e-36, 0.27, 0.0]"
+        },
+        {
+          "nodeLabel": 458,
+          "magnitude": 0.27000001072883606,
+          "data": "[9.69521e-38, 0.27, -0.0]"
+        },
+        {
+          "nodeLabel": 459,
+          "magnitude": 0.27000001072883606,
+          "data": "[-2.7785e-41, 0.27, 0.0]"
+        },
+        {
+          "nodeLabel": 445,
+          "magnitude": 0.2652941346168518,
+          "data": "[0.00056731346, 0.26529354, 2.8420907e-19]"
+        }
+      ]
+    },
+    "FrameEngage": {
+      "num_frames": 16,
+      "total_time": 1.0,
+      "cstatus": {
+        "total_points": 1485,
+        "contact_points": 0,
+        "contact_fraction": 0.0,
+        "contact_established": false
+      },
+      "cpress": {
+        "total_points": 1485,
+        "nonzero_points": 0,
+        "max": 0.0,
+        "min": 0.0,
+        "mean": 0.0
+      },
+      "cnormf": {
+        "total_points": 1485,
+        "nonzero_points": 0,
+        "max": 0.0,
+        "sum": 0.0
+      },
+      "reaction_forces": [
+        {
+          "nodeLabel": 452,
+          "magnitude": 365.7017517089844,
+          "data": "[-62.065132, 351.59875, -79.1455]"
+        },
+        {
+          "nodeLabel": 458,
+          "magnitude": 365.7017517089844,
+          "data": "[62.065132, 351.59875, -79.1455]"
+        },
+        {
+          "nodeLabel": 2,
+          "magnitude": 365.6978454589844,
+          "data": "[-62.06445, -351.59872, 79.12802]"
+        },
+        {
+          "nodeLabel": 8,
+          "magnitude": 365.6978454589844,
+          "data": "[62.06445, -351.59872, 79.12802]"
+        },
+        {
+          "nodeLabel": 454,
+          "magnitude": 328.85772705078125,
+          "data": "[-15.726255, 320.7746, -70.73727]"
+        },
+        {
+          "nodeLabel": 456,
+          "magnitude": 328.85772705078125,
+          "data": "[15.726255, 320.7746, -70.73727]"
+        },
+        {
+          "nodeLabel": 4,
+          "magnitude": 328.85443115234375,
+          "data": "[-15.72608, -320.77463, 70.721725]"
+        },
+        {
+          "nodeLabel": 6,
+          "magnitude": 328.85443115234375,
+          "data": "[15.72608, -320.77463, 70.721725]"
+        },
+        {
+          "nodeLabel": 453,
+          "magnitude": 323.5848388671875,
+          "data": "[-33.00987, 313.97345, -70.98002]"
+        },
+        {
+          "nodeLabel": 457,
+          "magnitude": 323.5848388671875,
+          "data": "[33.00987, 313.97345, -70.98002]"
+        }
+      ],
+      "displacements": [
+        {
+          "nodeLabel": 451,
+          "magnitude": 42.500858306884766,
+          "data": "[2.2124e-41, 0.27, -42.5]"
+        },
+        {
+          "nodeLabel": 452,
+          "magnitude": 42.500858306884766,
+          "data": "[6.250561e-35, 0.27, -42.5]"
+        },
+        {
+          "nodeLabel": 453,
+          "magnitude": 42.500858306884766,
+          "data": "[5.1315345e-35, 0.27, -42.5]"
+        },
+        {
+          "nodeLabel": 454,
+          "magnitude": 42.500858306884766,
+          "data": "[4.7764646e-35, 0.27, -42.5]"
+        },
+        {
+          "nodeLabel": 455,
+          "magnitude": 42.500858306884766,
+          "data": "[3.8816939e-35, 0.27, -42.5]"
+        },
+        {
+          "nodeLabel": 456,
+          "magnitude": 42.500858306884766,
+          "data": "[3.2038334e-35, 0.27, -42.5]"
+        },
+        {
+          "nodeLabel": 457,
+          "magnitude": 42.500858306884766,
+          "data": "[1.8305875e-35, 0.27, -42.5]"
+        },
+        {
+          "nodeLabel": 458,
+          "magnitude": 42.500858306884766,
+          "data": "[4.3919635e-37, 0.27, -42.5]"
+        },
+        {
+          "nodeLabel": 459,
+          "magnitude": 42.500858306884766,
+          "data": "[-2.2124e-41, 0.27, -42.5]"
+        },
+        {
+          "nodeLabel": 442,
+          "magnitude": 42.0536994934082,
+          "data": "[0.07145127, 0.17257518, -42.053284]"
+        }
+      ]
+    },
+    "Equilibrium": {
+      "num_frames": 16,
+      "total_time": 2.0,
+      "cstatus": {
+        "total_points": 1485,
+        "contact_points": 0,
+        "contact_fraction": 0.0,
+        "contact_established": false
+      },
+      "cpress": {
+        "total_points": 1485,
+        "nonzero_points": 0,
+        "max": 0.0,
+        "min": 0.0,
+        "mean": 0.0
+      },
+      "cnormf": {
+        "total_points": 1485,
+        "nonzero_points": 0,
+        "max": 0.0,
+        "sum": 0.0
+      },
+      "reaction_forces": [
+        {
+          "nodeLabel": 2,
+          "magnitude": 365.6994934082031,
+          "data": "[-62.064663, -351.5991, 79.13384]"
+        },
+        {
+          "nodeLabel": 8,
+          "magnitude": 365.6994934082031,
+          "data": "[62.064663, -351.5991, 79.13384]"
+        },
+        {
+          "nodeLabel": 452,
+          "magnitude": 365.6994934082031,
+          "data": "[-62.064667, 351.5991, -79.13393]"
+        },
+        {
+          "nodeLabel": 458,
+          "magnitude": 365.6994934082031,
+          "data": "[62.064667, 351.5991, -79.13393]"
+        },
+        {
+          "nodeLabel": 4,
+          "magnitude": 328.8558044433594,
+          "data": "[-15.726156, -320.7749, 70.72691]"
+        },
+        {
+          "nodeLabel": 6,
+          "magnitude": 328.8558044433594,
+          "data": "[15.726156, -320.7749, 70.72691]"
+        },
+        {
+          "nodeLabel": 454,
+          "magnitude": 328.85577392578125,
+          "data": "[-15.726156, 320.77487, -70.72691]"
+        },
+        {
+          "nodeLabel": 456,
+          "magnitude": 328.85577392578125,
+          "data": "[15.726156, 320.77487, -70.72691]"
+        },
+        {
+          "nodeLabel": 3,
+          "magnitude": 323.58306884765625,
+          "data": "[-33.009533, -313.974, 70.969666]"
+        },
+        {
+          "nodeLabel": 7,
+          "magnitude": 323.58306884765625,
+          "data": "[33.009533, -313.974, 70.969666]"
+        }
+      ],
+      "displacements": [
+        {
+          "nodeLabel": 451,
+          "magnitude": 42.500858306884766,
+          "data": "[0.0, 0.27, -42.5]"
+        },
+        {
+          "nodeLabel": 452,
+          "magnitude": 42.500858306884766,
+          "data": "[6.250464e-35, 0.27, -42.5]"
+        },
+        {
+          "nodeLabel": 453,
+          "magnitude": 42.500858306884766,
+          "data": "[5.1315965e-35, 0.27, -42.5]"
+        },
+        {
+          "nodeLabel": 454,
+          "magnitude": 42.500858306884766,
+          "data": "[4.776478e-35, 0.27, -42.5]"
+        },
+        {
+          "nodeLabel": 455,
+          "magnitude": 42.500858306884766,
+          "data": "[3.881717e-35, 0.27, -42.5]"
+        },
+        {
+          "nodeLabel": 456,
+          "magnitude": 42.500858306884766,
+          "data": "[3.2038624e-35, 0.27, -42.5]"
+        },
+        {
+          "nodeLabel": 457,
+          "magnitude": 42.500858306884766,
+          "data": "[1.8306425e-35, 0.27, -42.5]"
+        },
+        {
+          "nodeLabel": 458,
+          "magnitude": 42.500858306884766,
+          "data": "[4.399699e-37, 0.27, -42.5]"
+        },
+        {
+          "nodeLabel": 459,
+          "magnitude": 42.500858306884766,
+          "data": "[-0.0, 0.27, -42.5]"
+        },
+        {
+          "nodeLabel": 442,
+          "magnitude": 42.05376434326172,
+          "data": "[0.07145069, 0.17256907, -42.05335]"
+        }
+      ]
+    }
+  },
+  "instances": [
+    {
+      "name": "BI",
+      "num_nodes": 459,
+      "num_elements": 400
+    },
+    {
+      "name": "WI",
+      "num_nodes": 1845,
+      "num_elements": 1280
+    }
+  ]
+}

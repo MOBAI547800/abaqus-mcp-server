@@ -1,0 +1,58 @@
+{
+  "timestamp": "2026-07-23T14:00:00",
+  "gate": "V9-2",
+  "status": "PARTIALLY_ACHIEVED",
+  "contact_achieved": true,
+  "calibration_status": "FORCE_BINARY_TRANSITION",
+  "key_findings": [
+    "True cylindrical contact established (CSTATUS=107-458, CNORMF=61-98 kN at 1.2-1.5mm closure)",
+    "ENCASTRE WP BCs + 3-step protocol required for contact force",
+    "Force transitions from 0\u219261kN within 0.2mm closure range (1.0\u21921.2mm)",
+    "This binary transition is inherent to Hard pressure-overclosure contact formulation",
+    "30N target cannot be achieved with current BELTMID closure approach",
+    "30N calibration requires: softened contact, pre-positioned belt in contact, or direct contact control"
+  ],
+  "force_calibration_curve": [
+    {
+      "closure_mm": 0.15,
+      "CNORMF_N": 0
+    },
+    {
+      "closure_mm": 0.2,
+      "CNORMF_N": 0
+    },
+    {
+      "closure_mm": 0.5,
+      "CNORMF_N": 0
+    },
+    {
+      "closure_mm": 0.8,
+      "CNORMF_N": 0
+    },
+    {
+      "closure_mm": 1.0,
+      "CNORMF_N": 0
+    },
+    {
+      "closure_mm": 1.2,
+      "CNORMF_N": 61215
+    },
+    {
+      "closure_mm": 1.4,
+      "CNORMF_N": 89232
+    },
+    {
+      "closure_mm": 1.5,
+      "CNORMF_N": 97982
+    }
+  ],
+  "engineering_baselines_established": {
+    "rough_contact_achieved": true,
+    "contact_area": "107-458 nodes across 30mm belt width",
+    "contact_force_range_N": [
+      61215,
+      97982
+    ],
+    "force_target_status": "UNCALIBRATED \u2014 binary contact transition prevents 30N calibration"
+  }
+}

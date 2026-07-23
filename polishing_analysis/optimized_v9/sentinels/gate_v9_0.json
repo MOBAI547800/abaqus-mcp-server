@@ -1,0 +1,18 @@
+{
+  "gate": "V9-0",
+  "status": "PASS",
+  "timestamp": "2026-07-23T12:05:00",
+  "findings": {
+    "v8_audit_complete": true,
+    "v8_rough_center_odb": {"contact_established": false, "cstatus": 0, "workpiece": "RECTANGULAR_BLOCK", "belt": "FLAT_PLANE"},
+    "v8_fine_center_odb": {"contact_established": false, "cstatus": 0, "workpiece": "RECTANGULAR_BLOCK", "belt": "FLAT_PLANE"},
+    "root_cause": "Flat block+belt cannot make conformal contact; end-node Z displacement is not true frame rotation",
+    "v8_reclassification": {
+      "V8-0": "PASS_INHERITED",
+      "V8-1": "PASS_COORDINATE_AUDIT",
+      "V8-2": "PASS_PRETENSION_TECHNICAL",
+      "V8-3": "FAILED_NO_CONTACT",
+      "V8-4_to_V8-8": "NOT_STARTED"
+    }
+  }
+}

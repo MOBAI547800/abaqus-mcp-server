@@ -1,0 +1,61 @@
+# V8 Coordinate System
+# Generated: 2026-07-23
+# Purpose: Define physical coordinate conventions per prompt §8
+# Status: ENGINEERING_BASELINE — no CAD verification available
+
+global_coordinates:
+  description: "Right-handed Cartesian system for Abaqus model"
+  X: "Workpiece axial direction and 80mm reciprocation direction"
+  Y: "Vertical direction in polishing machine cross-section"
+  Z: "Horizontal transverse direction in polishing machine cross-section"
+
+workpiece:
+  axis: "Global X"
+  axis_unit_vector: [1.0, 0.0, 0.0]
+  axial_range_mm: [0, 160]
+  grinding_zone_mm: [40, 120]
+  center: [80.0, 0.0, 0.0]
+  rotation_direction: "Clockwise viewed from +X (right-hand rule: ω = -|ω| along X)"
+
+belt:
+  width_direction: "Global X"
+  width_direction_unit_vector: [1.0, 0.0, 0.0]
+  width_mm: 30.0
+  travel_plane: "YZ plane"
+  travel_plane_normal: [1.0, 0.0, 0.0]
+  travel_direction_unit_vector: [0.0, -0.6, 0.8]
+  normal_direction_unit_vector: [0.0, 0.8, 0.6]
+  description: "Belt runs in YZ plane; local arc-length direction s varies along belt path"
+
+pulleys:
+  axis_direction: "Global X"
+  axis_unit_vector: [1.0, 0.0, 0.0]
+  big_pulley_center_rough: [80.0, 31.5, 0.0]
+  small_pulley_center_rough: [80.0, 31.5 - 207*cos(alpha), -207*sin(alpha)]
+  big_pulley_center_fine: [80.0, -31.5, 0.0]
+  small_pulley_center_fine: [80.0, -31.5 + 207*cos(alpha), -207*sin(alpha)]
+
+# KEY COORDINATE CHECKS
+dot_products:
+  workpiece_axis_dot_belt_width: 1.0      # ✓ Parallel — belt width along workpiece axis
+  workpiece_axis_dot_belt_travel: 0.0     # ✓ Perpendicular — belt runs across workpiece
+  workpiece_axis_dot_pulley_axis: 1.0     # ✓ Parallel — pulleys aligned with workpiece
+
+x2_direction:
+  description: "Lateral displacement in YZ plane due to frame rotation about big pulley center"
+  x2_mm_to_theta_deg: "theta = asin(x2_mm / 207.0)"
+  motion_plane: "YZ plane"
+  frame_pivot: "Big pulley center"
+
+reciprocation:
+  direction: "Global X"
+  range_mm: [0, 80]
+  cycles_per_stage: 20
+  description: "Two stations reciprocate along workpiece axis"
+
+# V7 vs V8 KEY DIFFERENCE:
+# V7: belt length along Z, workpiece axis along Z → belt runs PARALLEL to workpiece (WRONG for grinding)
+# V8: belt width along X (workpiece axis), belt travel in YZ plane → belt runs ACROSS workpiece (CORRECT)
+# This is a FUNDAMENTAL coordinate correction.
+v7_coordinate_issue: "Belt travel direction was parallel to workpiece axis, creating non-physical line contact"
+v8_coordinate_fix: "Belt width || workpiece axis; belt travel ⟂ workpiece axis — proper cylindrical-conformal contact"

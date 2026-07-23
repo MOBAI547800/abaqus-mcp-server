@@ -1,0 +1,40 @@
+[
+  {
+    "type": "fine",
+    "closure_mm": 0.8,
+    "CSTATUS": 441,
+    "CNORMF_N": 0,
+    "step": ""
+  },
+  {
+    "type": "fine",
+    "closure_mm": 1.0,
+    "CSTATUS": 456,
+    "CNORMF_N": 0,
+    "step": ""
+  },
+  {
+    "type": "rough",
+    "closure_mm": 0.8,
+    "CSTATUS": 441,
+    "CNORMF_N": 0
+  },
+  {
+    "type": "rough",
+    "closure_mm": 1.0,
+    "CSTATUS": 458,
+    "CNORMF_N": 0
+  },
+  {
+    "type": "rough",
+    "closure_mm": 1.2,
+    "CSTATUS": 111,
+    "CNORMF_N": 61215.078985956156
+  },
+  {
+    "type": "rough",
+    "closure_mm": 1.4,
+    "CSTATUS": 109,
+    "CNORMF_N": 89231.50808842019
+  }
+]

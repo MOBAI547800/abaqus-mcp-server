@@ -1,0 +1,48 @@
+# V8 Wear Parameters (Archard)
+# Generated: 2026-07-23
+# Source: V8 prompt §31
+
+archard_model:
+  formula: "dh = K * p * v_rel * dt / H"
+  hardness_MPa: 1765.197  # AISI 304 at 180 HV
+
+  rough_P40:
+    K: 2.0e-5
+    grit: P40
+    cycles: 20
+    description: "Coarse grinding — higher material removal rate"
+
+  fine_P200:
+    K: 5.0e-6
+    grit: P200
+    cycles: 20
+    description: "Fine grinding — lower material removal rate"
+
+  input_pressure: "Area-weighted CPRESS from frame-driven contact ODB"
+  velocity: "Workpiece rotation + axial reciprocation dwell time"
+
+sensitivity:
+  hardness_HV: [160, 180, 220]
+  K_multiplier: [0.5, 1.0, 2.0]
+  backing_modulus_MPa: [2000, 4000, 8000]
+  pretension_scale: [0.8, 1.0, 1.2]
+
+wear_outputs:
+  required:
+    - RoughRemovedVolume_mm3
+    - FineRemovedVolume_mm3
+    - TotalRemovedVolume_mm3
+    - EquivalentRadialRemoval_um
+    - MaxLocalWearDepth_um
+    - WearUniformityCV
+    - RoughMRR_mm3_per_min
+    - FineMRR_mm3_per_min
+    - TotalEffectiveMRR_mm3_per_min
+    - FullCycleAverageMRR_mm3_per_min
+
+  validation:
+    equivalent_radial_removal_warning_um: 50.0
+    equivalent_radial_removal_invalid_um: 100.0
+    exceeds_100um: "INVALID_WEAR_RANGE"
+
+  status: UNCALIBRATED_ENGINEERING_BASELINE

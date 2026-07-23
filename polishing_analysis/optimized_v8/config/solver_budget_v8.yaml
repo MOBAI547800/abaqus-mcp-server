@@ -1,0 +1,59 @@
+# V8 Solver Budget
+# Generated: 2026-07-23
+
+solver: Abaqus/Standard
+solver_type: "Implicit static with NLGEOM"
+
+resources:
+  cpus: 4
+  walltime_minutes: 120
+  max_odb_size_gb: 5
+
+contact:
+  type: "General Contact"
+  inclusions: "ALL EXTERIOR"
+  property_assignment: "Individual — belt-WP gets friction; pulley-belt frictionless or low"
+  stabilization: "Automatic or specified damping in first increment of engage step"
+
+steps:
+  pretension:
+    nlgeom: YES
+    inc: 2000
+    initial_inc: 0.01
+    min_inc: 1.0e-08
+    max_inc: 0.1
+    stabilize: 0.0001
+
+  engage:
+    nlgeom: YES
+    inc: 2000
+    initial_inc: 0.01
+    min_inc: 1.0e-08
+    max_inc: 0.1
+    stabilize: 0.0001
+    unsymm: YES
+
+  equilibrium:
+    nlgeom: YES
+    inc: 2000
+    initial_inc: 0.01
+    min_inc: 1.0e-08
+    max_inc: 0.1
+    stabilize: 0.00005
+    unsymm: YES
+
+caching:
+  enabled: true
+  hash_algorithm: "SHA-256"
+  hash_inputs:
+    - "Complete INP content"
+    - "Material parameters"
+    - "Mesh coordinates"
+    - "Boundary conditions"
+    - "Step definitions"
+
+pre_submission_checklist:
+  - "Log node count, element count, CPUs, memory"
+  - "Estimate increments, wall-time, ODB size"
+  - "Verify workspace has sufficient disk space"
+  - "Confirm no existing lock files for job name"

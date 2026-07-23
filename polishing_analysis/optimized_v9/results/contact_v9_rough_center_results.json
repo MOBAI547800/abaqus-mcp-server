@@ -1,0 +1,100 @@
+{
+  "odb_path": "D:/mcp/abaqus_mcp/abaqus_work/contact_v9_rough_center.odb",
+  "instances": [
+    {
+      "name": "BI",
+      "nodes": 225,
+      "elements": 192
+    },
+    {
+      "name": "WI",
+      "nodes": 10989,
+      "elements": 9216
+    }
+  ],
+  "steps": {
+    "Pretension": {
+      "num_frames": 16,
+      "total_time": 0.0,
+      "cstatus": {
+        "total": 3619,
+        "contact": 594,
+        "frac": 0.1641337386018237,
+        "contact_ok": true
+      },
+      "cpress": {
+        "nz": 0,
+        "max": 0,
+        "mean": 0
+      },
+      "rf_top5": [
+        {
+          "node": 218,
+          "mag": 4.679365634918213
+        },
+        {
+          "node": 224,
+          "mag": 4.679365634918213
+        },
+        {
+          "node": 2,
+          "mag": 4.679154396057129
+        },
+        {
+          "node": 8,
+          "mag": 4.679154396057129
+        },
+        {
+          "node": 221,
+          "mag": 4.070035457611084
+        }
+      ]
+    },
+    "FrameEngage": {
+      "num_frames": 104,
+      "total_time": 1.0,
+      "cstatus": {
+        "total": 3619,
+        "contact": 594,
+        "frac": 0.1641337386018237,
+        "contact_ok": true
+      },
+      "cpress": {
+        "nz": 0,
+        "max": 0,
+        "mean": 0
+      },
+      "rf_top5": [
+        {
+          "node": 5,
+          "mag": 3245.91796875
+        },
+        {
+          "node": 3,
+          "mag": 3044.96728515625
+        },
+        {
+          "node": 7,
+          "mag": 3044.96728515625
+        },
+        {
+          "node": 218,
+          "mag": 2766.721923828125
+        },
+        {
+          "node": 224,
+          "mag": 2766.721923828125
+        }
+      ],
+      "peeq": {
+        "max": 0,
+        "nz_frac": 0.0
+      }
+    },
+    "Equilibrium": {
+      "num_frames": 0,
+      "total_time": -1.0,
+      "note": "EMPTY_STEP"
+    }
+  }
+}

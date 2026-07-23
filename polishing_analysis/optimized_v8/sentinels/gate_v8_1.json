@@ -1,0 +1,20 @@
+{
+  "gate": "V8-1",
+  "status": "PASS",
+  "timestamp": "2026-07-23T11:03:55.130673",
+  "findings": {
+    "workpiece_axis": "Global X",
+    "belt_width_dir": "Global X (parallel to workpiece)",
+    "belt_travel_dir": "YZ plane (perpendicular to workpiece)",
+    "pulley_axis": "Global X (parallel to workpiece)",
+    "workpiece_axis_dot_belt_width": 1.0,
+    "workpiece_axis_dot_belt_travel": 0.0,
+    "x2_direction": "Lateral frame displacement in YZ",
+    "rough_fine_mirror": "Verified about Y=0",
+    "distance_207mm": "VERIFIED",
+    "distance_70mm": "VERIFIED",
+    "distance_100mm": "VERIFIED",
+    "beltmid_closure_used": false,
+    "coordinate_issue_v7": "Belt travel was parallel to workpiece axis in V7"
+  }
+}

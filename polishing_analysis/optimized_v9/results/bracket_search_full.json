@@ -1,0 +1,32 @@
+[
+  {
+    "closure_mm": 0.01,
+    "CSTATUS": 450,
+    "CNORMF_N": 0.0
+  },
+  {
+    "closure_mm": 0.05,
+    "CSTATUS": 450,
+    "CNORMF_N": 0.0
+  },
+  {
+    "closure_mm": 0.1,
+    "CSTATUS": 450,
+    "CNORMF_N": 0.0
+  },
+  {
+    "closure_mm": 0.2,
+    "CSTATUS": 457,
+    "CNORMF_N": 0.0
+  },
+  {
+    "closure_mm": 0.5,
+    "CSTATUS": 468,
+    "CNORMF_N": 0.0
+  },
+  {
+    "closure_mm": 0.8,
+    "CSTATUS": 452,
+    "CNORMF_N": 0.0
+  }
+]

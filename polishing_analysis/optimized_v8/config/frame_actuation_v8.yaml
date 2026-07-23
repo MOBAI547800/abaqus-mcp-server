@@ -1,0 +1,47 @@
+# V8 Frame Actuation Configuration
+# Generated: 2026-07-23
+# Replaces BELTMID uniform closure with frame rotation about big pulley center
+
+frame_actuation:
+  description: "Polishing machine frame pivots about big pulley center; small pulley, belt support, and belt follow frame motion"
+
+  pivot:
+    rough: "Rough big pulley center at [80.0, 31.5, 0.0]"
+    fine: "Fine big pulley center at [80.0, -31.5, 0.0]"
+
+  reference_points:
+    FRAME_RP_ROUGH: "At rough big pulley center — rotation applied here"
+    FRAME_RP_FINE: "At fine big pulley center — rotation applied here"
+
+  rotation_axis: "Global X (parallel to workpiece axis)"
+  rotation_plane: "YZ plane"
+
+  x2_to_angle:
+    formula: "theta = asin(x2_mm / 207.0)"
+    reference: "Small pulley center lateral displacement"
+    table:
+      - {x2_mm: 35.0, theta_deg: 9.734}
+      - {x2_mm: 42.5, theta_deg: 11.848}
+      - {x2_mm: 50.0, theta_deg: 13.978}
+
+  kinematic_chain:
+    description: "Rigid body constraint hierarchy"
+    steps:
+      - "FRAME_RP is the master reference point at big pulley center"
+      - "Big pulley is rigid body with reference point at FRAME_RP"
+      - "Small pulley center is kinematically coupled to FRAME_RP via rigid connection along center distance (207mm)"
+      - "Belt support/path follows both pulley positions"
+      - "Applying rotation to FRAME_RP about X axis rotates entire assembly"
+
+  zero_offset:
+    description: "Additional rotation beyond x2 angle to establish target contact force"
+    status: "TO_BE_CALIBRATED — Center point x2=42.5mm serves as reference"
+    rough_center_normal_force_target_N: 30.0
+    fine_center_normal_force_target_N: 20.0
+
+  # KEY DIFFERENCE from V7 BELTMID closure:
+  # V7: Uniform Z-displacement applied to all belt mid-nodes
+  # V8: Frame rotation about big pulley center → belt approach angle changes naturally
+  # No direct normal displacement applied to belt nodes
+  deprecated_method: "BELTMID uniform closure (V7)"
+  current_method: "Frame rotation about big pulley center (V8)"
