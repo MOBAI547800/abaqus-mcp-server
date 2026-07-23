@@ -1,0 +1,281 @@
+# V10 双工位砂带抛光 DOE — 主配置文件
+# 生成时间: 2026-07-23
+# 基于 V9 审计结论: 61-98 kN 为提取伪差，真实接触力 ~15-22 kN (BELTMID 驱动)
+# V10 策略: 真实框架链 + 双顶尖支撑 + 正确矢量力提取
+
+project:
+  name: optimized_v10
+  base_path: D:/mcp/abaqus_mcp/polishing_analysis/optimized_v10
+  abaqus_version: "2025"
+  mcp_server_version: "0.1.0"
+
+# ============================================================
+# 工件: AISI 304 真实圆柱
+# ============================================================
+workpiece:
+  material: AISI_304
+  geometry: true_cylinder
+  diameter_mm: 26.0
+  radius_mm: 13.0
+  length_mm: 160.0
+  theoretical_volume_mm3: 84948.666
+  theoretical_mass_kg: 0.671
+  mesh_type: polar_ogrid
+  element_type: C3D8R
+  core_radius_mm: 0.5
+  circumferential_segments: 48
+  radial_segments: 12
+  axial_segments: 48
+  total_nodes: 31213
+  total_elements: 27648
+  volume_error_pct: 0.285
+  zero_volume_elements: 0
+  surface_radius_error_mm: 0.0
+  mesh_source: migrated_from_v9
+  support_type: DOUBLE_CENTER_DISTRIBUTING_COUPLING
+  left_support: WP_LEFT_RP (fixed translation, constrained rotation)
+  right_support: WP_RIGHT_RP (radial fixed, axial free)
+  encastre_status: SENSITIVITY_ONLY
+  named_surfaces:
+    WP_GRIND_SURF: cylindrical_surface_80mm_mid_zone
+    WP_GRIND_NODES: all_nodes_on_WP_GRIND_SURF
+    WP_LEFT_END: left_end_face
+    WP_RIGHT_END: right_end_face
+
+# ============================================================
+# 砂带: 双带轮柔性 S4R
+# ============================================================
+belt:
+  material: BeltMat
+  backing_modulus_MPa: 4000.0
+  backing_status: UNCALIBRATED_ENGINEERING_BASELINE
+  width_mm: 30.0
+  thickness_mm: 1.0
+  element_type: S4R
+  local_1_direction: along_belt_path
+  local_2_direction: along_width
+  belt_plane: YZ
+
+  pulleys:
+    big_pulley:
+      radius_mm: 31.5
+      center_yz: [0.0, 0.0]  # local belt coordinate
+    small_pulley:
+      radius_mm: 12.0
+      center_yz: [0.0, 207.0]  # local belt coordinate
+    center_distance_mm: 207.0
+    half_wrap_angle_diff_deg: 5.4054
+    straight_segment_length_mm: 206.08
+    big_wrap_angle_deg: 190.81
+    small_wrap_angle_deg: 169.19
+    neutral_layer_length_mm: 552.50
+
+  rough_grit:
+    grit: P40
+    friction_coefficient: 0.45
+    wear_coefficient: 2.0e-5
+    pretension_target_N: 90.0
+  fine_grit:
+    grit: P200
+    friction_coefficient: 0.35
+    wear_coefficient: 5.0e-6
+    pretension_target_N: 60.0
+
+  named_surfaces:
+    BELT_WORK_OUTER: outer_surface_facing_workpiece
+    BELT_WORK_NODES: nodes_on_BELT_WORK_OUTER
+    BELT_PULLEY_INNER: inner_surface_contacting_pulleys
+    BIG_PULLEY_SURF: big_pulley_outer_surface
+    SMALL_PULLEY_SURF: small_pulley_outer_surface
+
+# ============================================================
+# 框架执行: FRAME_RP 刚体链 (路线 A)
+# ============================================================
+frame:
+  route: A  # FRAME_RP rigid body chain; fallback B: static pose
+  FRAME_RP_location: big_pulley_center
+  FRAME_RP_dof: UR1_only (rotation about X)
+  big_pulley_coupling: rigid_body_to_FRAME_RP
+  small_pulley_coupling: rigid_link_or_connector
+  tensioner_dof: 1D_along_centerline
+  center_distance_fixed_mm: 207.0
+  pose_angle: theta_x2 = asin(x2/207.0)
+
+  x2_angles:
+    - {x2_mm: 35.0, theta_deg: 9.734}
+    - {x2_mm: 42.5, theta_deg: 11.848}
+    - {x2_mm: 50.0, theta_deg: 13.978}
+
+  prohibited:
+    - BELTMID_closure
+    - small_pulley_end_node_independent_Z_displacement
+    - x2_as_normal_indentation
+
+# ============================================================
+# 机械柔顺执行器
+# ============================================================
+compliance:
+  status: UNCALIBRATED_ENGINEERING_BASELINE
+  equivalent_normal_stiffness_N_per_mm: 100.0
+  sensitivity_N_per_mm: [50.0, 100.0, 200.0]
+  lever_arm_mm: 207.0
+  equivalent_rotational_stiffness_Nmm_per_rad: 4284900.0  # k_n * L²
+  viscous_regularization_ratio: 0.01
+  connector_type: rotational_about_X
+  location: FRAME_RP_to_ground
+  max_additional_rotation_deg: 0.5
+  max_additional_displacement_mm: 1.0
+
+# ============================================================
+# 接触定义
+# ============================================================
+contact:
+  algorithm: General Contact
+  surface: All Exterior
+  global_property:
+    type: Hard Contact
+    separation: allowed
+    friction: frictionless
+  individual_properties:
+    belt_workpiece:
+      rough_mu: 0.45
+      fine_mu: 0.35
+      friction_formulation: penalty
+    belt_pulley:
+      frictionless: true
+  exclusion_pairs:
+    - workpiece_to_big_pulley
+    - workpiece_to_small_pulley
+    - pulley_to_pulley
+    - irrelevant_rigid_bodies
+    - non_essential_belt_self_contact
+
+# ============================================================
+# 输出请求
+# ============================================================
+output:
+  field:
+    - CSTATUS
+    - CPRESS
+    - CNORMF
+    - CSHEARF
+    - COPEN
+    - CSLIP
+    - U
+    - RF
+    - S
+    - PEEQ
+    - ALLSE
+    - ALLSD
+  history:
+    - ALLSE (total)
+    - ALLSD (total)
+    - ALLWK (total)
+
+# ============================================================
+# 中心点接触参数
+# ============================================================
+centerpoint:
+  x1_rpm: 2250
+  x2_mm: 42.5
+  x3_mms: 7.5
+  steps:
+    - Pretension
+    - FramePose
+    - ContactApproach
+    - FrictionRamp
+    - Equilibrium
+  initial_gap_mm: [0.01, 0.05]  # small positive gap after pretension
+  rough_target_N: 30.0
+  fine_target_N: 20.0
+  calibration_tolerance_pct: 3.0
+  calibration_tolerance_N: 0.5
+  calibration_variable: frame_rest_angle_offset  # or connector_preload
+
+# ============================================================
+# 接触物理门槛
+# ============================================================
+thresholds:
+  mean_cpress_min_MPa: 0.05
+  mean_cpress_max_MPa: 50.0
+  p95_cpress_max_MPa: 100.0
+  p99_cpress_warning_MPa: 230.0
+  max_force_balance_error_pct: 5.0
+  max_action_reaction_error_pct: 5.0
+  max_target_force_error_pct: 3.0
+  max_pretension_error_pct: 2.0
+  max_stabilization_energy_ratio_pct: 5.0
+  max_contact_zone_peeq_fraction_pct: 1.0
+  max_normal_to_pretension_ratio_warning: 5.0
+  max_normal_to_pretension_ratio_invalid: 20.0
+  max_belt_deformation_mm: 5.0
+
+# ============================================================
+# 网格敏感性
+# ============================================================
+mesh_sensitivity:
+  levels:
+    coarse:
+      workpiece_contact_mm: 2.0
+      belt_work_mm: 2.0
+    medium:
+      workpiece_contact_mm: 1.0
+      belt_work_mm: 1.0
+    fine:
+      workpiece_contact_mm: 0.5
+      belt_work_mm: 0.5
+
+# ============================================================
+# DOE 设计
+# ============================================================
+doe:
+  design: Box_Behnken
+  factors: 3
+  rows: 17
+  unique_combinations: 13
+  center_points: 4
+  input_sheet: D:/mcp/abaqus_mcp/polishing_analysis/input/experimental_run_sheet.csv
+
+# ============================================================
+# 状态追踪
+# ============================================================
+status_definitions:
+  solver:
+    - NOT_STARTED
+    - BUILD_FAILED
+    - DATACHECK_FAILED
+    - SOLVER_FAILED
+    - ODB_MISSING
+    - SOLVER_VALID
+  physical:
+    - NOT_ASSESSED
+    - VALID_ENGINEERING_BASELINE
+    - INVALID_FORCE_EXTRACTION
+    - INVALID_CONTACT_DOMAIN
+    - INVALID_WORKPIECE_MESH
+    - INVALID_FRAME_CHAIN
+    - INVALID_BELT_LINEAGE
+    - INVALID_INITIAL_INTERFERENCE
+    - INVALID_ACTUATOR_COMPLIANCE
+    - INVALID_FORCE_OFFSET_NONMONOTONIC
+    - INVALID_PRESSURE_RANGE
+    - INVALID_FORCE_BALANCE
+    - INVALID_MESH_DEPENDENCE
+    - INVALID_EXCESSIVE_PLASTICITY
+    - INVALID_THERMAL_RANGE
+    - INVALID_WEAR_RANGE
+  maturity:
+    - TECHNICAL_TEST_ONLY
+    - CONTACT_OUTPUT_VALIDATED
+    - POSE_FROZEN_TRUE_GEOMETRY
+    - TRUE_FRAME_CHAIN
+    - TWO_PULLEY_FLEXIBLE_BELT
+    - CYLINDRICAL_WORKPIECE_VALIDATED
+    - EXPERIMENTALLY_CALIBRATED
+  source:
+    - ABAQUS_ODB
+    - ABAQUS_EXPLICIT_QUASI_STATIC_ODB
+    - EXTERNAL_PHYSICS_INTEGRATION
+    - CALIBRATED_SURROGATE
+    - UNCALIBRATED_ENGINEERING_BASELINE
+    - INVALID

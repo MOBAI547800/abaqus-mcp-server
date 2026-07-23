@@ -1,0 +1,2332 @@
+{
+  "summary": [
+    {
+      "label": "cl1p5v3",
+      "status": "AUDITED",
+      "old_magnitude_sum_N": 97977.6584,
+      "new_vector_sum_N": 0.0241,
+      "ratio": 4058902.8556,
+      "verdict": "ARTIFACT_CONFIRMED",
+      "instances": [
+        "BI",
+        "WI"
+      ]
+    },
+    {
+      "label": "rough_b3_1p20",
+      "status": "AUDITED",
+      "old_magnitude_sum_N": 61215.0793,
+      "new_vector_sum_N": 0.0018,
+      "ratio": 33871755.948,
+      "verdict": "ARTIFACT_CONFIRMED",
+      "instances": [
+        "BI",
+        "WI"
+      ]
+    },
+    {
+      "label": "fine_b3_12",
+      "status": "AUDITED",
+      "old_magnitude_sum_N": 60776.3091,
+      "new_vector_sum_N": 0.0003,
+      "ratio": 60776309.0905,
+      "verdict": "ARTIFACT_CONFIRMED",
+      "instances": [
+        "BI",
+        "WI"
+      ]
+    },
+    {
+      "label": "rough_b3_1p40",
+      "status": "AUDITED",
+      "old_magnitude_sum_N": 89231.508,
+      "new_vector_sum_N": 0.001,
+      "ratio": 89231507.9791,
+      "verdict": "ARTIFACT_CONFIRMED",
+      "instances": [
+        "BI",
+        "WI"
+      ]
+    },
+    {
+      "label": "rough_cal_50",
+      "status": "AUDITED",
+      "old_magnitude_sum_N": 0.0,
+      "new_vector_sum_N": 0.0,
+      "ratio": 0.0,
+      "verdict": "EXTRACTION_LIKELY_CORRECT",
+      "instances": [
+        "BI",
+        "WI"
+      ]
+    },
+    {
+      "label": "rough_cal_40",
+      "status": "AUDITED",
+      "old_magnitude_sum_N": 0.0,
+      "new_vector_sum_N": 0.0,
+      "ratio": 0.0,
+      "verdict": "EXTRACTION_LIKELY_CORRECT",
+      "instances": [
+        "BI",
+        "WI"
+      ]
+    },
+    {
+      "label": "rough_cal_30",
+      "status": "AUDITED",
+      "old_magnitude_sum_N": 0.0,
+      "new_vector_sum_N": 0.0,
+      "ratio": 0.0,
+      "verdict": "EXTRACTION_LIKELY_CORRECT",
+      "instances": [
+        "BI",
+        "WI"
+      ]
+    },
+    {
+      "label": "rough_cal_20",
+      "status": "AUDITED",
+      "old_magnitude_sum_N": 0.0,
+      "new_vector_sum_N": 0.0,
+      "ratio": 0.0,
+      "verdict": "EXTRACTION_LIKELY_CORRECT",
+      "instances": [
+        "BI",
+        "WI"
+      ]
+    }
+  ],
+  "detailed": {
+    "cl1p5v3": {
+      "odb_path": "D:/mcp/abaqus_mcp/abaqus_work/contact_v9_cl1p5v3.odb",
+      "instances": {
+        "BI": {
+          "node_count": 459,
+          "element_count": 400
+        },
+        "WI": {
+          "node_count": 10989,
+          "element_count": 9216
+        }
+      },
+      "steps": {
+        "Pretension": {
+          "num_frames": 16,
+          "total_time": 0.0,
+          "cstatus": {
+            "BI": {
+              "total": 459,
+              "contact_points": 0,
+              "contact_frac": 0.0
+            },
+            "WI": {
+              "total": 3394,
+              "contact_points": 450,
+              "contact_frac": 0.13258691809074838
+            }
+          },
+          "cnormf_corrected": {
+            "BI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 459
+            },
+            "WI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 3394
+            },
+            "GLOBAL_VECTOR_SUM": {
+              "vector_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          },
+          "cnormf_old_wrong": {
+            "BI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "WI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "GLOBAL_MAGNITUDE_SUM_N": 0.0
+          },
+          "force_extraction_audit": {
+            "method_A_vector_sum": 0.0,
+            "method_OLD_magnitude_sum": 0.0,
+            "ratio_mag_sum_to_vector_sum": 0.0,
+            "verdict": "EXTRACTION_LIKELY_CORRECT"
+          },
+          "cpress": {
+            "BI": {
+              "nonzero_count": 0,
+              "max_MPa": 0,
+              "mean_MPa": 0,
+              "p95_MPa": 0,
+              "p99_MPa": 0,
+              "WARNING": "CPRESS is zero or missing \u2014 pressure field not usable for thermal/wear"
+            },
+            "WI": {
+              "nonzero_count": 0,
+              "max_MPa": 0,
+              "mean_MPa": 0,
+              "p95_MPa": 0,
+              "p99_MPa": 0,
+              "WARNING": "CPRESS is zero or missing \u2014 pressure field not usable for thermal/wear"
+            }
+          },
+          "rf_vector_sum": {
+            "BI": {
+              "vector_N": [
+                0.0007,
+                0.0,
+                -0.0
+              ],
+              "magnitude_N": 0.0007
+            },
+            "WI": {
+              "vector_N": [
+                -0.0,
+                -0.0,
+                -0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          }
+        },
+        "Closure": {
+          "num_frames": 27,
+          "total_time": 1.0,
+          "cstatus": {
+            "BI": {
+              "total": 459,
+              "contact_points": 5,
+              "contact_frac": 0.010893246187363835
+            },
+            "WI": {
+              "total": 3394,
+              "contact_points": 102,
+              "contact_frac": 0.030053034767236298
+            }
+          },
+          "cnormf_corrected": {
+            "BI": {
+              "vector_sum_N": [
+                -33.9123,
+                -889.4247,
+                -23683.2797
+              ],
+              "vector_magnitude_N": 23699.9992,
+              "node_count": 459
+            },
+            "WI": {
+              "vector_sum_N": [
+                33.9114,
+                889.4245,
+                23683.2567
+              ],
+              "vector_magnitude_N": 23699.9762,
+              "node_count": 3394
+            },
+            "GLOBAL_VECTOR_SUM": {
+              "vector_N": [
+                -0.001,
+                -0.0002,
+                -0.023
+              ],
+              "magnitude_N": 0.023
+            }
+          },
+          "cnormf_old_wrong": {
+            "BI": {
+              "magnitude_sum_N": 23710.1013,
+              "max_magnitude_N": 5296.5759,
+              "mean_magnitude_N": 51.656,
+              "nonzero_count": 17
+            },
+            "WI": {
+              "magnitude_sum_N": 74298.5061,
+              "max_magnitude_N": 6132.8455,
+              "mean_magnitude_N": 21.8911,
+              "nonzero_count": 335
+            },
+            "GLOBAL_MAGNITUDE_SUM_N": 98008.6074
+          },
+          "force_extraction_audit": {
+            "method_A_vector_sum": 0.023,
+            "method_OLD_magnitude_sum": 98008.6074,
+            "ratio_mag_sum_to_vector_sum": 4264191.5716,
+            "verdict": "ARTIFACT_CONFIRMED"
+          },
+          "cpress": {
+            "BI": {
+              "nonzero_count": 0,
+              "max_MPa": 0,
+              "mean_MPa": 0,
+              "p95_MPa": 0,
+              "p99_MPa": 0,
+              "WARNING": "CPRESS is zero or missing \u2014 pressure field not usable for thermal/wear"
+            },
+            "WI": {
+              "nonzero_count": 0,
+              "max_MPa": 0,
+              "mean_MPa": 0,
+              "p95_MPa": 0,
+              "p99_MPa": 0,
+              "WARNING": "CPRESS is zero or missing \u2014 pressure field not usable for thermal/wear"
+            }
+          },
+          "rf_vector_sum": {
+            "BI": {
+              "vector_N": [
+                7.4935,
+                956.7605,
+                23680.9515
+              ],
+              "magnitude_N": 23700.2724
+            },
+            "WI": {
+              "vector_N": [
+                -7.7516,
+                -957.562,
+                -23674.5483
+              ],
+              "magnitude_N": 23693.9069
+            }
+          },
+          "peeq": {
+            "max": 0.096328,
+            "nonzero_frac": 0.054905
+          }
+        },
+        "Equilibrium": {
+          "num_frames": 20,
+          "total_time": 2.0,
+          "cstatus": {
+            "BI": {
+              "total": 459,
+              "contact_points": 5,
+              "contact_frac": 0.010893246187363835
+            },
+            "WI": {
+              "total": 3394,
+              "contact_points": 102,
+              "contact_frac": 0.030053034767236298
+            }
+          },
+          "cnormf_corrected": {
+            "BI": {
+              "vector_sum_N": [
+                -33.8747,
+                -889.1246,
+                -23672.4005
+              ],
+              "vector_magnitude_N": 23689.1164,
+              "node_count": 459
+            },
+            "WI": {
+              "vector_sum_N": [
+                33.8737,
+                889.1245,
+                23672.3764
+              ],
+              "vector_magnitude_N": 23689.0923,
+              "node_count": 3394
+            },
+            "GLOBAL_VECTOR_SUM": {
+              "vector_N": [
+                -0.001,
+                -0.0002,
+                -0.0241
+              ],
+              "magnitude_N": 0.0241
+            }
+          },
+          "cnormf_old_wrong": {
+            "BI": {
+              "magnitude_sum_N": 23699.2148,
+              "max_magnitude_N": 5293.9948,
+              "mean_magnitude_N": 51.6323,
+              "nonzero_count": 17
+            },
+            "WI": {
+              "magnitude_sum_N": 74278.4435,
+              "max_magnitude_N": 6129.9353,
+              "mean_magnitude_N": 21.8852,
+              "nonzero_count": 335
+            },
+            "GLOBAL_MAGNITUDE_SUM_N": 97977.6584
+          },
+          "force_extraction_audit": {
+            "method_A_vector_sum": 0.0241,
+            "method_OLD_magnitude_sum": 97977.6584,
+            "ratio_mag_sum_to_vector_sum": 4058902.8556,
+            "verdict": "ARTIFACT_CONFIRMED"
+          },
+          "cpress": {
+            "BI": {
+              "nonzero_count": 0,
+              "max_MPa": 0,
+              "mean_MPa": 0,
+              "p95_MPa": 0,
+              "p99_MPa": 0,
+              "WARNING": "CPRESS is zero or missing \u2014 pressure field not usable for thermal/wear"
+            },
+            "WI": {
+              "nonzero_count": 0,
+              "max_MPa": 0,
+              "mean_MPa": 0,
+              "p95_MPa": 0,
+              "p99_MPa": 0,
+              "WARNING": "CPRESS is zero or missing \u2014 pressure field not usable for thermal/wear"
+            }
+          },
+          "rf_vector_sum": {
+            "BI": {
+              "vector_N": [
+                7.497,
+                957.0157,
+                23669.477
+              ],
+              "magnitude_N": 23688.8176
+            },
+            "WI": {
+              "vector_N": [
+                -7.4971,
+                -957.0156,
+                -23669.4768
+              ],
+              "magnitude_N": 23688.8173
+            }
+          },
+          "peeq": {
+            "max": 0.096333,
+            "nonzero_frac": 0.054905
+          }
+        }
+      }
+    },
+    "rough_b3_1p20": {
+      "odb_path": "D:/mcp/abaqus_mcp/abaqus_work/contact_v9_rough_b3_1p20.odb",
+      "instances": {
+        "BI": {
+          "node_count": 459,
+          "element_count": 400
+        },
+        "WI": {
+          "node_count": 10989,
+          "element_count": 9216
+        }
+      },
+      "steps": {
+        "Pretension": {
+          "num_frames": 16,
+          "total_time": 0.0,
+          "cstatus": {
+            "BI": {
+              "total": 459,
+              "contact_points": 0,
+              "contact_frac": 0.0
+            },
+            "WI": {
+              "total": 3394,
+              "contact_points": 450,
+              "contact_frac": 0.13258691809074838
+            }
+          },
+          "cnormf_corrected": {
+            "BI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 459
+            },
+            "WI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 3394
+            },
+            "GLOBAL_VECTOR_SUM": {
+              "vector_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          },
+          "cnormf_old_wrong": {
+            "BI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "WI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "GLOBAL_MAGNITUDE_SUM_N": 0.0
+          },
+          "force_extraction_audit": {
+            "method_A_vector_sum": 0.0,
+            "method_OLD_magnitude_sum": 0.0,
+            "ratio_mag_sum_to_vector_sum": 0.0,
+            "verdict": "EXTRACTION_LIKELY_CORRECT"
+          },
+          "rf_vector_sum": {
+            "BI": {
+              "vector_N": [
+                0.0007,
+                0.0,
+                0.0
+              ],
+              "magnitude_N": 0.0007
+            },
+            "WI": {
+              "vector_N": [
+                -0.0,
+                -0.0,
+                -0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          }
+        },
+        "Closure": {
+          "num_frames": 24,
+          "total_time": 1.0,
+          "cstatus": {
+            "BI": {
+              "total": 459,
+              "contact_points": 5,
+              "contact_frac": 0.010893246187363835
+            },
+            "WI": {
+              "total": 3394,
+              "contact_points": 106,
+              "contact_frac": 0.031231585150265175
+            }
+          },
+          "cnormf_corrected": {
+            "BI": {
+              "vector_sum_N": [
+                1.1779,
+                -169.2717,
+                -15456.7091
+              ],
+              "vector_magnitude_N": 15457.636,
+              "node_count": 459
+            },
+            "WI": {
+              "vector_sum_N": [
+                -1.1779,
+                169.2715,
+                15456.7076
+              ],
+              "vector_magnitude_N": 15457.6345,
+              "node_count": 3394
+            },
+            "GLOBAL_VECTOR_SUM": {
+              "vector_N": [
+                -0.0,
+                -0.0001,
+                -0.0015
+              ],
+              "magnitude_N": 0.0015
+            }
+          },
+          "cnormf_old_wrong": {
+            "BI": {
+              "magnitude_sum_N": 15465.7602,
+              "max_magnitude_N": 3438.9825,
+              "mean_magnitude_N": 33.6945,
+              "nonzero_count": 17
+            },
+            "WI": {
+              "magnitude_sum_N": 45768.1497,
+              "max_magnitude_N": 4025.9815,
+              "mean_magnitude_N": 13.485,
+              "nonzero_count": 324
+            },
+            "GLOBAL_MAGNITUDE_SUM_N": 61233.91
+          },
+          "force_extraction_audit": {
+            "method_A_vector_sum": 0.0015,
+            "method_OLD_magnitude_sum": 61233.91,
+            "ratio_mag_sum_to_vector_sum": 41687074.0969,
+            "verdict": "ARTIFACT_CONFIRMED"
+          },
+          "rf_vector_sum": {
+            "BI": {
+              "vector_N": [
+                2.2716,
+                286.3202,
+                15455.8323
+              ],
+              "magnitude_N": 15458.4843
+            },
+            "WI": {
+              "vector_N": [
+                -2.4081,
+                -287.1787,
+                -15450.6903
+              ],
+              "magnitude_N": 15453.3591
+            }
+          },
+          "peeq": {
+            "max": 0.023967,
+            "nonzero_frac": 0.021593
+          }
+        },
+        "Equilibrium": {
+          "num_frames": 17,
+          "total_time": 2.0,
+          "cstatus": {
+            "BI": {
+              "total": 459,
+              "contact_points": 5,
+              "contact_frac": 0.010893246187363835
+            },
+            "WI": {
+              "total": 3394,
+              "contact_points": 106,
+              "contact_frac": 0.031231585150265175
+            }
+          },
+          "cnormf_corrected": {
+            "BI": {
+              "vector_sum_N": [
+                1.1886,
+                -169.2396,
+                -15449.2095
+              ],
+              "vector_magnitude_N": 15450.1365,
+              "node_count": 459
+            },
+            "WI": {
+              "vector_sum_N": [
+                -1.1886,
+                169.2394,
+                15449.2077
+              ],
+              "vector_magnitude_N": 15450.1347,
+              "node_count": 3394
+            },
+            "GLOBAL_VECTOR_SUM": {
+              "vector_N": [
+                -0.0,
+                -0.0001,
+                -0.0018
+              ],
+              "magnitude_N": 0.0018
+            }
+          },
+          "cnormf_old_wrong": {
+            "BI": {
+              "magnitude_sum_N": 15458.2573,
+              "max_magnitude_N": 3437.6117,
+              "mean_magnitude_N": 33.6781,
+              "nonzero_count": 17
+            },
+            "WI": {
+              "magnitude_sum_N": 45756.822,
+              "max_magnitude_N": 4024.2994,
+              "mean_magnitude_N": 13.4817,
+              "nonzero_count": 324
+            },
+            "GLOBAL_MAGNITUDE_SUM_N": 61215.0793
+          },
+          "force_extraction_audit": {
+            "method_A_vector_sum": 0.0018,
+            "method_OLD_magnitude_sum": 61215.0793,
+            "ratio_mag_sum_to_vector_sum": 33871755.948,
+            "verdict": "ARTIFACT_CONFIRMED"
+          },
+          "rf_vector_sum": {
+            "BI": {
+              "vector_N": [
+                2.2723,
+                286.5145,
+                15447.8639
+              ],
+              "magnitude_N": 15450.5208
+            },
+            "WI": {
+              "vector_N": [
+                -2.2723,
+                -286.5145,
+                -15447.8637
+              ],
+              "magnitude_N": 15450.5207
+            }
+          },
+          "peeq": {
+            "max": 0.02397,
+            "nonzero_frac": 0.021593
+          }
+        }
+      }
+    },
+    "fine_b3_12": {
+      "odb_path": "D:/mcp/abaqus_mcp/abaqus_work/contact_v9_fine_b3_12.odb",
+      "instances": {
+        "BI": {
+          "node_count": 459,
+          "element_count": 400
+        },
+        "WI": {
+          "node_count": 10989,
+          "element_count": 9216
+        }
+      },
+      "steps": {
+        "Pretension": {
+          "num_frames": 16,
+          "total_time": 0.0,
+          "cstatus": {
+            "BI": {
+              "total": 459,
+              "contact_points": 0,
+              "contact_frac": 0.0
+            },
+            "WI": {
+              "total": 3394,
+              "contact_points": 450,
+              "contact_frac": 0.13258691809074838
+            }
+          },
+          "cnormf_corrected": {
+            "BI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 459
+            },
+            "WI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 3394
+            },
+            "GLOBAL_VECTOR_SUM": {
+              "vector_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          },
+          "cnormf_old_wrong": {
+            "BI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "WI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "GLOBAL_MAGNITUDE_SUM_N": 0.0
+          },
+          "force_extraction_audit": {
+            "method_A_vector_sum": 0.0,
+            "method_OLD_magnitude_sum": 0.0,
+            "ratio_mag_sum_to_vector_sum": 0.0,
+            "verdict": "EXTRACTION_LIKELY_CORRECT"
+          },
+          "rf_vector_sum": {
+            "BI": {
+              "vector_N": [
+                0.0005,
+                -0.0,
+                -0.0
+              ],
+              "magnitude_N": 0.0005
+            },
+            "WI": {
+              "vector_N": [
+                -0.0,
+                -0.0,
+                -0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          }
+        },
+        "Closure": {
+          "num_frames": 23,
+          "total_time": 1.0,
+          "cstatus": {
+            "BI": {
+              "total": 459,
+              "contact_points": 5,
+              "contact_frac": 0.010893246187363835
+            },
+            "WI": {
+              "total": 3394,
+              "contact_points": 104,
+              "contact_frac": 0.030642309958750738
+            }
+          },
+          "cnormf_corrected": {
+            "BI": {
+              "vector_sum_N": [
+                1.4105,
+                -167.6286,
+                -15359.0523
+              ],
+              "vector_magnitude_N": 15359.9671,
+              "node_count": 459
+            },
+            "WI": {
+              "vector_sum_N": [
+                -1.4105,
+                167.6286,
+                15359.0526
+              ],
+              "vector_magnitude_N": 15359.9674,
+              "node_count": 3394
+            },
+            "GLOBAL_VECTOR_SUM": {
+              "vector_N": [
+                0.0,
+                0.0,
+                0.0003
+              ],
+              "magnitude_N": 0.0003
+            }
+          },
+          "cnormf_old_wrong": {
+            "BI": {
+              "magnitude_sum_N": 15367.7484,
+              "max_magnitude_N": 3438.0764,
+              "mean_magnitude_N": 33.4809,
+              "nonzero_count": 15
+            },
+            "WI": {
+              "magnitude_sum_N": 45427.3258,
+              "max_magnitude_N": 4004.3794,
+              "mean_magnitude_N": 13.3846,
+              "nonzero_count": 317
+            },
+            "GLOBAL_MAGNITUDE_SUM_N": 60795.0742
+          },
+          "force_extraction_audit": {
+            "method_A_vector_sum": 0.0003,
+            "method_OLD_magnitude_sum": 60795.0742,
+            "ratio_mag_sum_to_vector_sum": 60795074.2127,
+            "verdict": "ARTIFACT_CONFIRMED"
+          },
+          "rf_vector_sum": {
+            "BI": {
+              "vector_N": [
+                2.2538,
+                284.2756,
+                15358.1854
+              ],
+              "magnitude_N": 15360.8162
+            },
+            "WI": {
+              "vector_N": [
+                -2.4713,
+                -285.0895,
+                -15353.051
+              ],
+              "magnitude_N": 15355.6979
+            }
+          },
+          "peeq": {
+            "max": 0.023601,
+            "nonzero_frac": 0.021593
+          }
+        },
+        "Equilibrium": {
+          "num_frames": 17,
+          "total_time": 2.0,
+          "cstatus": {
+            "BI": {
+              "total": 459,
+              "contact_points": 5,
+              "contact_frac": 0.010893246187363835
+            },
+            "WI": {
+              "total": 3394,
+              "contact_points": 104,
+              "contact_frac": 0.030642309958750738
+            }
+          },
+          "cnormf_corrected": {
+            "BI": {
+              "vector_sum_N": [
+                1.421,
+                -167.5965,
+                -15351.583
+              ],
+              "vector_magnitude_N": 15352.4979,
+              "node_count": 459
+            },
+            "WI": {
+              "vector_sum_N": [
+                -1.421,
+                167.5965,
+                15351.5827
+              ],
+              "vector_magnitude_N": 15352.4976,
+              "node_count": 3394
+            },
+            "GLOBAL_VECTOR_SUM": {
+              "vector_N": [
+                0.0,
+                -0.0,
+                -0.0003
+              ],
+              "magnitude_N": 0.0003
+            }
+          },
+          "cnormf_old_wrong": {
+            "BI": {
+              "magnitude_sum_N": 15360.2758,
+              "max_magnitude_N": 3436.7082,
+              "mean_magnitude_N": 33.4647,
+              "nonzero_count": 15
+            },
+            "WI": {
+              "magnitude_sum_N": 45416.0333,
+              "max_magnitude_N": 4002.7047,
+              "mean_magnitude_N": 13.3813,
+              "nonzero_count": 317
+            },
+            "GLOBAL_MAGNITUDE_SUM_N": 60776.3091
+          },
+          "force_extraction_audit": {
+            "method_A_vector_sum": 0.0003,
+            "method_OLD_magnitude_sum": 60776.3091,
+            "ratio_mag_sum_to_vector_sum": 60776309.0905,
+            "verdict": "ARTIFACT_CONFIRMED"
+          },
+          "rf_vector_sum": {
+            "BI": {
+              "vector_N": [
+                2.2553,
+                284.4692,
+                15350.2474
+              ],
+              "magnitude_N": 15352.8832
+            },
+            "WI": {
+              "vector_N": [
+                -2.2552,
+                -284.4692,
+                -15350.2473
+              ],
+              "magnitude_N": 15352.8832
+            }
+          },
+          "peeq": {
+            "max": 0.023605,
+            "nonzero_frac": 0.021593
+          }
+        }
+      }
+    },
+    "rough_b3_1p40": {
+      "odb_path": "D:/mcp/abaqus_mcp/abaqus_work/contact_v9_rough_b3_1p40.odb",
+      "instances": {
+        "BI": {
+          "node_count": 459,
+          "element_count": 400
+        },
+        "WI": {
+          "node_count": 10989,
+          "element_count": 9216
+        }
+      },
+      "steps": {
+        "Pretension": {
+          "num_frames": 16,
+          "total_time": 0.0,
+          "cstatus": {
+            "BI": {
+              "total": 459,
+              "contact_points": 0,
+              "contact_frac": 0.0
+            },
+            "WI": {
+              "total": 3394,
+              "contact_points": 450,
+              "contact_frac": 0.13258691809074838
+            }
+          },
+          "cnormf_corrected": {
+            "BI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 459
+            },
+            "WI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 3394
+            },
+            "GLOBAL_VECTOR_SUM": {
+              "vector_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          },
+          "cnormf_old_wrong": {
+            "BI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "WI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "GLOBAL_MAGNITUDE_SUM_N": 0.0
+          },
+          "force_extraction_audit": {
+            "method_A_vector_sum": 0.0,
+            "method_OLD_magnitude_sum": 0.0,
+            "ratio_mag_sum_to_vector_sum": 0.0,
+            "verdict": "EXTRACTION_LIKELY_CORRECT"
+          },
+          "rf_vector_sum": {
+            "BI": {
+              "vector_N": [
+                0.0007,
+                0.0,
+                0.0
+              ],
+              "magnitude_N": 0.0007
+            },
+            "WI": {
+              "vector_N": [
+                -0.0,
+                -0.0,
+                -0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          }
+        },
+        "Closure": {
+          "num_frames": 21,
+          "total_time": 1.0,
+          "cstatus": {
+            "BI": {
+              "total": 459,
+              "contact_points": 5,
+              "contact_frac": 0.010893246187363835
+            },
+            "WI": {
+              "total": 3394,
+              "contact_points": 104,
+              "contact_frac": 0.030642309958750738
+            }
+          },
+          "cnormf_corrected": {
+            "BI": {
+              "vector_sum_N": [
+                -19.3318,
+                -624.4613,
+                -21695.3326
+              ],
+              "vector_magnitude_N": 21704.3264,
+              "node_count": 459
+            },
+            "WI": {
+              "vector_sum_N": [
+                19.3318,
+                624.4611,
+                21695.3315
+              ],
+              "vector_magnitude_N": 21704.3253,
+              "node_count": 3394
+            },
+            "GLOBAL_VECTOR_SUM": {
+              "vector_N": [
+                -0.0,
+                -0.0001,
+                -0.0011
+              ],
+              "magnitude_N": 0.0011
+            }
+          },
+          "cnormf_old_wrong": {
+            "BI": {
+              "magnitude_sum_N": 21714.3605,
+              "max_magnitude_N": 4725.0802,
+              "mean_magnitude_N": 47.308,
+              "nonzero_count": 17
+            },
+            "WI": {
+              "magnitude_sum_N": 67545.9082,
+              "max_magnitude_N": 5532.9692,
+              "mean_magnitude_N": 19.9016,
+              "nonzero_count": 337
+            },
+            "GLOBAL_MAGNITUDE_SUM_N": 89260.2687
+          },
+          "force_extraction_audit": {
+            "method_A_vector_sum": 0.0011,
+            "method_OLD_magnitude_sum": 89260.2687,
+            "ratio_mag_sum_to_vector_sum": 80185438.179,
+            "verdict": "ARTIFACT_CONFIRMED"
+          },
+          "rf_vector_sum": {
+            "BI": {
+              "vector_N": [
+                5.7128,
+                740.2206,
+                21692.2585
+              ],
+              "magnitude_N": 21704.8852
+            },
+            "WI": {
+              "vector_N": [
+                -5.9361,
+                -741.0683,
+                -21686.2019
+              ],
+              "magnitude_N": 21698.8611
+            }
+          },
+          "peeq": {
+            "max": 0.0718,
+            "nonzero_frac": 0.045898
+          }
+        },
+        "Equilibrium": {
+          "num_frames": 18,
+          "total_time": 2.0,
+          "cstatus": {
+            "BI": {
+              "total": 459,
+              "contact_points": 5,
+              "contact_frac": 0.010893246187363835
+            },
+            "WI": {
+              "total": 3394,
+              "contact_points": 104,
+              "contact_frac": 0.030642309958750738
+            }
+          },
+          "cnormf_corrected": {
+            "BI": {
+              "vector_sum_N": [
+                -19.304,
+                -624.2614,
+                -21685.065
+              ],
+              "vector_magnitude_N": 21694.0572,
+              "node_count": 459
+            },
+            "WI": {
+              "vector_sum_N": [
+                19.304,
+                624.2613,
+                21685.064
+              ],
+              "vector_magnitude_N": 21694.0562,
+              "node_count": 3394
+            },
+            "GLOBAL_VECTOR_SUM": {
+              "vector_N": [
+                -0.0,
+                -0.0001,
+                -0.001
+              ],
+              "magnitude_N": 0.001
+            }
+          },
+          "cnormf_old_wrong": {
+            "BI": {
+              "magnitude_sum_N": 21704.0874,
+              "max_magnitude_N": 4722.6481,
+              "mean_magnitude_N": 47.2856,
+              "nonzero_count": 17
+            },
+            "WI": {
+              "magnitude_sum_N": 67527.4206,
+              "max_magnitude_N": 5530.2252,
+              "mean_magnitude_N": 19.8961,
+              "nonzero_count": 337
+            },
+            "GLOBAL_MAGNITUDE_SUM_N": 89231.508
+          },
+          "force_extraction_audit": {
+            "method_A_vector_sum": 0.001,
+            "method_OLD_magnitude_sum": 89231.508,
+            "ratio_mag_sum_to_vector_sum": 89231507.9791,
+            "verdict": "ARTIFACT_CONFIRMED"
+          },
+          "rf_vector_sum": {
+            "BI": {
+              "vector_N": [
+                5.7155,
+                740.467,
+                21681.439
+              ],
+              "magnitude_N": 21694.0803
+            },
+            "WI": {
+              "vector_N": [
+                -5.7155,
+                -740.467,
+                -21681.439
+              ],
+              "magnitude_N": 21694.0803
+            }
+          },
+          "peeq": {
+            "max": 0.071805,
+            "nonzero_frac": 0.045898
+          }
+        }
+      }
+    },
+    "rough_cal_50": {
+      "odb_path": "D:/mcp/abaqus_mcp/abaqus_work/contact_v9_rough_cal_50.odb",
+      "instances": {
+        "BI": {
+          "node_count": 459,
+          "element_count": 400
+        },
+        "WI": {
+          "node_count": 10989,
+          "element_count": 9216
+        }
+      },
+      "steps": {
+        "Pretension": {
+          "num_frames": 16,
+          "total_time": 0.0,
+          "cstatus": {
+            "BI": {
+              "total": 459,
+              "contact_points": 0,
+              "contact_frac": 0.0
+            },
+            "WI": {
+              "total": 3394,
+              "contact_points": 525,
+              "contact_frac": 0.15468473777253977
+            }
+          },
+          "cnormf_corrected": {
+            "BI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 459
+            },
+            "WI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 3394
+            },
+            "GLOBAL_VECTOR_SUM": {
+              "vector_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          },
+          "cnormf_old_wrong": {
+            "BI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "WI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "GLOBAL_MAGNITUDE_SUM_N": 0.0
+          },
+          "force_extraction_audit": {
+            "method_A_vector_sum": 0.0,
+            "method_OLD_magnitude_sum": 0.0,
+            "ratio_mag_sum_to_vector_sum": 0.0,
+            "verdict": "EXTRACTION_LIKELY_CORRECT"
+          },
+          "rf_vector_sum": {
+            "BI": {
+              "vector_N": [
+                0.0007,
+                0.0,
+                0.0
+              ],
+              "magnitude_N": 0.0007
+            },
+            "WI": {
+              "vector_N": [
+                0.0,
+                -0.0,
+                -0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          }
+        },
+        "Closure": {
+          "num_frames": 16,
+          "total_time": 1.0,
+          "cstatus": {
+            "BI": {
+              "total": 459,
+              "contact_points": 0,
+              "contact_frac": 0.0
+            },
+            "WI": {
+              "total": 3394,
+              "contact_points": 498,
+              "contact_frac": 0.14672952268709488
+            }
+          },
+          "cnormf_corrected": {
+            "BI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 459
+            },
+            "WI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 3394
+            },
+            "GLOBAL_VECTOR_SUM": {
+              "vector_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          },
+          "cnormf_old_wrong": {
+            "BI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "WI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "GLOBAL_MAGNITUDE_SUM_N": 0.0
+          },
+          "force_extraction_audit": {
+            "method_A_vector_sum": 0.0,
+            "method_OLD_magnitude_sum": 0.0,
+            "ratio_mag_sum_to_vector_sum": 0.0,
+            "verdict": "EXTRACTION_LIKELY_CORRECT"
+          },
+          "rf_vector_sum": {
+            "BI": {
+              "vector_N": [
+                0.0,
+                -0.0052,
+                0.1952
+              ],
+              "magnitude_N": 0.1953
+            },
+            "WI": {
+              "vector_N": [
+                -0.0,
+                -0.0,
+                -0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          },
+          "peeq": {
+            "max": 0,
+            "nonzero_frac": 0.0
+          }
+        },
+        "Equilibrium": {
+          "num_frames": 16,
+          "total_time": 2.0,
+          "cstatus": {
+            "BI": {
+              "total": 459,
+              "contact_points": 0,
+              "contact_frac": 0.0
+            },
+            "WI": {
+              "total": 3394,
+              "contact_points": 518,
+              "contact_frac": 0.15262227460223923
+            }
+          },
+          "cnormf_corrected": {
+            "BI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 459
+            },
+            "WI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 3394
+            },
+            "GLOBAL_VECTOR_SUM": {
+              "vector_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          },
+          "cnormf_old_wrong": {
+            "BI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "WI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "GLOBAL_MAGNITUDE_SUM_N": 0.0
+          },
+          "force_extraction_audit": {
+            "method_A_vector_sum": 0.0,
+            "method_OLD_magnitude_sum": 0.0,
+            "ratio_mag_sum_to_vector_sum": 0.0,
+            "verdict": "EXTRACTION_LIKELY_CORRECT"
+          },
+          "rf_vector_sum": {
+            "BI": {
+              "vector_N": [
+                -0.0,
+                0.0,
+                0.0
+              ],
+              "magnitude_N": 0.0
+            },
+            "WI": {
+              "vector_N": [
+                0.0,
+                -0.0,
+                -0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          },
+          "peeq": {
+            "max": 0,
+            "nonzero_frac": 0.0
+          }
+        }
+      }
+    },
+    "rough_cal_40": {
+      "odb_path": "D:/mcp/abaqus_mcp/abaqus_work/contact_v9_rough_cal_40.odb",
+      "instances": {
+        "BI": {
+          "node_count": 459,
+          "element_count": 400
+        },
+        "WI": {
+          "node_count": 10989,
+          "element_count": 9216
+        }
+      },
+      "steps": {
+        "Pretension": {
+          "num_frames": 16,
+          "total_time": 0.0,
+          "cstatus": {
+            "BI": {
+              "total": 459,
+              "contact_points": 0,
+              "contact_frac": 0.0
+            },
+            "WI": {
+              "total": 3394,
+              "contact_points": 525,
+              "contact_frac": 0.15468473777253977
+            }
+          },
+          "cnormf_corrected": {
+            "BI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 459
+            },
+            "WI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 3394
+            },
+            "GLOBAL_VECTOR_SUM": {
+              "vector_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          },
+          "cnormf_old_wrong": {
+            "BI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "WI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "GLOBAL_MAGNITUDE_SUM_N": 0.0
+          },
+          "force_extraction_audit": {
+            "method_A_vector_sum": 0.0,
+            "method_OLD_magnitude_sum": 0.0,
+            "ratio_mag_sum_to_vector_sum": 0.0,
+            "verdict": "EXTRACTION_LIKELY_CORRECT"
+          },
+          "rf_vector_sum": {
+            "BI": {
+              "vector_N": [
+                0.0007,
+                0.0,
+                0.0
+              ],
+              "magnitude_N": 0.0007
+            },
+            "WI": {
+              "vector_N": [
+                0.0,
+                -0.0,
+                -0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          }
+        },
+        "Closure": {
+          "num_frames": 16,
+          "total_time": 1.0,
+          "cstatus": {
+            "BI": {
+              "total": 459,
+              "contact_points": 0,
+              "contact_frac": 0.0
+            },
+            "WI": {
+              "total": 3394,
+              "contact_points": 506,
+              "contact_frac": 0.14908662345315263
+            }
+          },
+          "cnormf_corrected": {
+            "BI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 459
+            },
+            "WI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 3394
+            },
+            "GLOBAL_VECTOR_SUM": {
+              "vector_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          },
+          "cnormf_old_wrong": {
+            "BI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "WI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "GLOBAL_MAGNITUDE_SUM_N": 0.0
+          },
+          "force_extraction_audit": {
+            "method_A_vector_sum": 0.0,
+            "method_OLD_magnitude_sum": 0.0,
+            "ratio_mag_sum_to_vector_sum": 0.0,
+            "verdict": "EXTRACTION_LIKELY_CORRECT"
+          },
+          "rf_vector_sum": {
+            "BI": {
+              "vector_N": [
+                0.0,
+                -0.0042,
+                0.1562
+              ],
+              "magnitude_N": 0.1562
+            },
+            "WI": {
+              "vector_N": [
+                -0.0,
+                -0.0,
+                -0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          },
+          "peeq": {
+            "max": 0,
+            "nonzero_frac": 0.0
+          }
+        },
+        "Equilibrium": {
+          "num_frames": 16,
+          "total_time": 2.0,
+          "cstatus": {
+            "BI": {
+              "total": 459,
+              "contact_points": 0,
+              "contact_frac": 0.0
+            },
+            "WI": {
+              "total": 3394,
+              "contact_points": 519,
+              "contact_frac": 0.15291691219799647
+            }
+          },
+          "cnormf_corrected": {
+            "BI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 459
+            },
+            "WI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 3394
+            },
+            "GLOBAL_VECTOR_SUM": {
+              "vector_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          },
+          "cnormf_old_wrong": {
+            "BI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "WI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "GLOBAL_MAGNITUDE_SUM_N": 0.0
+          },
+          "force_extraction_audit": {
+            "method_A_vector_sum": 0.0,
+            "method_OLD_magnitude_sum": 0.0,
+            "ratio_mag_sum_to_vector_sum": 0.0,
+            "verdict": "EXTRACTION_LIKELY_CORRECT"
+          },
+          "rf_vector_sum": {
+            "BI": {
+              "vector_N": [
+                0.0,
+                -0.0,
+                -0.0
+              ],
+              "magnitude_N": 0.0
+            },
+            "WI": {
+              "vector_N": [
+                0.0,
+                -0.0,
+                -0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          },
+          "peeq": {
+            "max": 0,
+            "nonzero_frac": 0.0
+          }
+        }
+      }
+    },
+    "rough_cal_30": {
+      "odb_path": "D:/mcp/abaqus_mcp/abaqus_work/contact_v9_rough_cal_30.odb",
+      "instances": {
+        "BI": {
+          "node_count": 459,
+          "element_count": 400
+        },
+        "WI": {
+          "node_count": 10989,
+          "element_count": 9216
+        }
+      },
+      "steps": {
+        "Pretension": {
+          "num_frames": 16,
+          "total_time": 0.0,
+          "cstatus": {
+            "BI": {
+              "total": 459,
+              "contact_points": 0,
+              "contact_frac": 0.0
+            },
+            "WI": {
+              "total": 3394,
+              "contact_points": 525,
+              "contact_frac": 0.15468473777253977
+            }
+          },
+          "cnormf_corrected": {
+            "BI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 459
+            },
+            "WI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 3394
+            },
+            "GLOBAL_VECTOR_SUM": {
+              "vector_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          },
+          "cnormf_old_wrong": {
+            "BI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "WI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "GLOBAL_MAGNITUDE_SUM_N": 0.0
+          },
+          "force_extraction_audit": {
+            "method_A_vector_sum": 0.0,
+            "method_OLD_magnitude_sum": 0.0,
+            "ratio_mag_sum_to_vector_sum": 0.0,
+            "verdict": "EXTRACTION_LIKELY_CORRECT"
+          },
+          "rf_vector_sum": {
+            "BI": {
+              "vector_N": [
+                0.0007,
+                0.0,
+                -0.0
+              ],
+              "magnitude_N": 0.0007
+            },
+            "WI": {
+              "vector_N": [
+                0.0,
+                -0.0,
+                -0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          }
+        },
+        "Closure": {
+          "num_frames": 16,
+          "total_time": 1.0,
+          "cstatus": {
+            "BI": {
+              "total": 459,
+              "contact_points": 0,
+              "contact_frac": 0.0
+            },
+            "WI": {
+              "total": 3394,
+              "contact_points": 512,
+              "contact_frac": 0.15085444902769593
+            }
+          },
+          "cnormf_corrected": {
+            "BI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 459
+            },
+            "WI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 3394
+            },
+            "GLOBAL_VECTOR_SUM": {
+              "vector_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          },
+          "cnormf_old_wrong": {
+            "BI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "WI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "GLOBAL_MAGNITUDE_SUM_N": 0.0
+          },
+          "force_extraction_audit": {
+            "method_A_vector_sum": 0.0,
+            "method_OLD_magnitude_sum": 0.0,
+            "ratio_mag_sum_to_vector_sum": 0.0,
+            "verdict": "EXTRACTION_LIKELY_CORRECT"
+          },
+          "rf_vector_sum": {
+            "BI": {
+              "vector_N": [
+                0.0,
+                -0.0022,
+                0.1171
+              ],
+              "magnitude_N": 0.1171
+            },
+            "WI": {
+              "vector_N": [
+                -0.0,
+                -0.0,
+                -0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          },
+          "peeq": {
+            "max": 0,
+            "nonzero_frac": 0.0
+          }
+        },
+        "Equilibrium": {
+          "num_frames": 16,
+          "total_time": 2.0,
+          "cstatus": {
+            "BI": {
+              "total": 459,
+              "contact_points": 0,
+              "contact_frac": 0.0
+            },
+            "WI": {
+              "total": 3394,
+              "contact_points": 504,
+              "contact_frac": 0.14849734826163818
+            }
+          },
+          "cnormf_corrected": {
+            "BI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 459
+            },
+            "WI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 3394
+            },
+            "GLOBAL_VECTOR_SUM": {
+              "vector_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          },
+          "cnormf_old_wrong": {
+            "BI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "WI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "GLOBAL_MAGNITUDE_SUM_N": 0.0
+          },
+          "force_extraction_audit": {
+            "method_A_vector_sum": 0.0,
+            "method_OLD_magnitude_sum": 0.0,
+            "ratio_mag_sum_to_vector_sum": 0.0,
+            "verdict": "EXTRACTION_LIKELY_CORRECT"
+          },
+          "rf_vector_sum": {
+            "BI": {
+              "vector_N": [
+                0.0,
+                -0.0,
+                -0.0
+              ],
+              "magnitude_N": 0.0
+            },
+            "WI": {
+              "vector_N": [
+                -0.0,
+                -0.0,
+                -0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          },
+          "peeq": {
+            "max": 0,
+            "nonzero_frac": 0.0
+          }
+        }
+      }
+    },
+    "rough_cal_20": {
+      "odb_path": "D:/mcp/abaqus_mcp/abaqus_work/contact_v9_rough_cal_20.odb",
+      "instances": {
+        "BI": {
+          "node_count": 459,
+          "element_count": 400
+        },
+        "WI": {
+          "node_count": 10989,
+          "element_count": 9216
+        }
+      },
+      "steps": {
+        "Pretension": {
+          "num_frames": 16,
+          "total_time": 0.0,
+          "cstatus": {
+            "BI": {
+              "total": 459,
+              "contact_points": 0,
+              "contact_frac": 0.0
+            },
+            "WI": {
+              "total": 3394,
+              "contact_points": 525,
+              "contact_frac": 0.15468473777253977
+            }
+          },
+          "cnormf_corrected": {
+            "BI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 459
+            },
+            "WI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 3394
+            },
+            "GLOBAL_VECTOR_SUM": {
+              "vector_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          },
+          "cnormf_old_wrong": {
+            "BI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "WI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "GLOBAL_MAGNITUDE_SUM_N": 0.0
+          },
+          "force_extraction_audit": {
+            "method_A_vector_sum": 0.0,
+            "method_OLD_magnitude_sum": 0.0,
+            "ratio_mag_sum_to_vector_sum": 0.0,
+            "verdict": "EXTRACTION_LIKELY_CORRECT"
+          },
+          "rf_vector_sum": {
+            "BI": {
+              "vector_N": [
+                0.0007,
+                0.0,
+                0.0
+              ],
+              "magnitude_N": 0.0007
+            },
+            "WI": {
+              "vector_N": [
+                0.0,
+                -0.0,
+                -0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          }
+        },
+        "Closure": {
+          "num_frames": 16,
+          "total_time": 1.0,
+          "cstatus": {
+            "BI": {
+              "total": 459,
+              "contact_points": 0,
+              "contact_frac": 0.0
+            },
+            "WI": {
+              "total": 3394,
+              "contact_points": 512,
+              "contact_frac": 0.15085444902769593
+            }
+          },
+          "cnormf_corrected": {
+            "BI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 459
+            },
+            "WI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 3394
+            },
+            "GLOBAL_VECTOR_SUM": {
+              "vector_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          },
+          "cnormf_old_wrong": {
+            "BI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "WI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "GLOBAL_MAGNITUDE_SUM_N": 0.0
+          },
+          "force_extraction_audit": {
+            "method_A_vector_sum": 0.0,
+            "method_OLD_magnitude_sum": 0.0,
+            "ratio_mag_sum_to_vector_sum": 0.0,
+            "verdict": "EXTRACTION_LIKELY_CORRECT"
+          },
+          "rf_vector_sum": {
+            "BI": {
+              "vector_N": [
+                0.0,
+                -0.0009,
+                0.0781
+              ],
+              "magnitude_N": 0.0781
+            },
+            "WI": {
+              "vector_N": [
+                -0.0,
+                -0.0,
+                -0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          },
+          "peeq": {
+            "max": 0,
+            "nonzero_frac": 0.0
+          }
+        },
+        "Equilibrium": {
+          "num_frames": 16,
+          "total_time": 2.0,
+          "cstatus": {
+            "BI": {
+              "total": 459,
+              "contact_points": 0,
+              "contact_frac": 0.0
+            },
+            "WI": {
+              "total": 3394,
+              "contact_points": 508,
+              "contact_frac": 0.14967589864466707
+            }
+          },
+          "cnormf_corrected": {
+            "BI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 459
+            },
+            "WI": {
+              "vector_sum_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "vector_magnitude_N": 0.0,
+              "node_count": 3394
+            },
+            "GLOBAL_VECTOR_SUM": {
+              "vector_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          },
+          "cnormf_old_wrong": {
+            "BI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "WI": {
+              "magnitude_sum_N": 0.0,
+              "max_magnitude_N": 0.0,
+              "mean_magnitude_N": 0.0,
+              "nonzero_count": 0
+            },
+            "GLOBAL_MAGNITUDE_SUM_N": 0.0
+          },
+          "force_extraction_audit": {
+            "method_A_vector_sum": 0.0,
+            "method_OLD_magnitude_sum": 0.0,
+            "ratio_mag_sum_to_vector_sum": 0.0,
+            "verdict": "EXTRACTION_LIKELY_CORRECT"
+          },
+          "rf_vector_sum": {
+            "BI": {
+              "vector_N": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "magnitude_N": 0.0
+            },
+            "WI": {
+              "vector_N": [
+                0.0,
+                0.0,
+                -0.0
+              ],
+              "magnitude_N": 0.0
+            }
+          },
+          "peeq": {
+            "max": 0,
+            "nonzero_frac": 0.0
+          }
+        }
+      }
+    }
+  }
+}
