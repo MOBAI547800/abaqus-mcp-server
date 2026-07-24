@@ -1,0 +1,30 @@
+{
+  "geometry": {
+    "diameter_mm": 26.0,
+    "radius_mm": 13.0,
+    "length_mm": 160.0,
+    "core_radius_mm": 0.5,
+    "theoretical_volume_mm3": 84948.665353068
+  },
+  "mesh": {
+    "num_nodes": 31213,
+    "num_elements": 27648,
+    "element_type": "C3D8R",
+    "topology": "polar_structured"
+  },
+  "volume_check": {
+    "mesh_volume_mm3": 84580.97255859838,
+    "core_volume_mm3": 125.66370614359172,
+    "total_volume_mm3": 84706.63626474197,
+    "volume_error_pct": 0.28491217292243215,
+    "zero_vol_elements": 0,
+    "min_vol_mm3": 0.46265794406701655,
+    "max_vol_mm3": 5.655757316247953
+  },
+  "surface_check": {
+    "max_radius_error_mm": 0.0,
+    "passed": true
+  },
+  "overall": "PASS",
+  "inp_path": "D:/mcp/abaqus_mcp/polishing_analysis/optimized_v9/inps\\workpiece_cylinder_v9.inp"
+}

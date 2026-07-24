@@ -1,0 +1,77 @@
+*Heading
+** V11 Keyword Scope Smoke Test
+** Minimal model: 1 C3D8R block + 1 rigid plane
+*Preprint, echo=NO, model=NO, history=NO, contact=NO
+** == PART ==
+*Part, name=BLOCK
+*Node
+1, -5.0, -5.0, -5.0
+2,  5.0, -5.0, -5.0
+3,  5.0,  5.0, -5.0
+4, -5.0,  5.0, -5.0
+5, -5.0, -5.0,  5.0
+6,  5.0, -5.0,  5.0
+7,  5.0,  5.0,  5.0
+8, -5.0,  5.0,  5.0
+*Element, type=C3D8R
+1,1,2,3,4,5,6,7,8
+*Nset, nset=ALL_NODES, generate
+1,8,1
+*Elset, elset=ALL_ELEMS
+1,
+*Surface, type=ELEMENT, name=BLK_ALL
+ALL_ELEMS,
+*Solid Section, elset=ALL_ELEMS, material=TEST_MAT
+*End Part
+*Part, name=PLANE
+*Node
+1, 0.0, 0.0, -10.0
+*Nset, nset=PLANE_REF
+1,
+*Surface, type=REVOLUTION, name=PLANE_SURF
+START, 20.0, -20.0
+LINE,  20.0,  20.0
+*Rigid Body, ref node=PLANE_REF, analytical surface=PLANE_SURF
+*End Part
+** == ASSEMBLY ==
+*Assembly, name=Assembly
+*Instance, name=BLK, part=BLOCK
+*End Instance
+*Instance, name=PLN, part=PLANE
+*End Instance
+*End Assembly
+** == MODEL DATA ==
+*Material, name=TEST_MAT
+*Elastic
+210000.0, 0.3
+*Surface Interaction, name=INT_FRICTION
+*Friction
+0.1,
+*Surface Behavior, pressure-overclosure=HARD
+*Contact
+*Contact Inclusions
+BLK.BLK_ALL, PLN.PLANE_SURF
+*Contact Property Assignment
+BLK.BLK_ALL, PLN.PLANE_SURF, INT_FRICTION
+** == INITIAL CONDITIONS ==
+*Initial Conditions, type=TEMPERATURE
+BLK.ALL_NODES, 20.0
+** == STEP ==
+*Step, name=Push, nlgeom=YES, inc=100
+*Static
+0.1, 1.0, 1e-05, 1.0
+*Boundary
+BLK.ALL_NODES, 1, 1, 0.0
+BLK.ALL_NODES, 3, 3, 0.0
+PLN.PLANE_REF, 1, 6, 0.0
+*Cload
+BLK.ALL_NODES, 2, -10.0
+*Output, field
+*Node Output
+U, RF
+*Element Output
+S
+*Contact Output
+CSTATUS
+*Output, history
+*End Step

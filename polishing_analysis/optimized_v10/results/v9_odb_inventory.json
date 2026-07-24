@@ -1,0 +1,30 @@
+{
+  "audited": [
+    {
+      "name": "contact_v9_cl1p5v3",
+      "status": "ARTIFACT_CONFIRMED",
+      "real_force_N": 0.02
+    },
+    {
+      "name": "contact_v9_rough_b3_1p20",
+      "status": "ARTIFACT_CONFIRMED",
+      "real_force_N": 0.0
+    },
+    {
+      "name": "contact_v9_fine_b3_12",
+      "status": "ARTIFACT_CONFIRMED",
+      "real_force_N": 0.0
+    },
+    {
+      "name": "contact_v9_rough_b3_1p40",
+      "status": "ARTIFACT_CONFIRMED",
+      "real_force_N": 0.0
+    },
+    {
+      "name": "contact_v9_rough_cal_*",
+      "status": "NO_CONTACT"
+    }
+  ],
+  "total_v9_odb": 36,
+  "read_only_index": true
+}
