@@ -1,0 +1,46 @@
+{
+  "project": "optimized_v11",
+  "report_date": "2026-07-24",
+  "gates": {
+    "V11-0": {"status": "COMPLETE", "description": "V10 audit — root cause: missing *End Step (not Contact-in-Assembly)"},
+    "V11-1": {"status": "COMPLETE", "description": "Keyword scope smoke — datacheck PASSED, canonical order verified, Contact Output syntax fixed (CSTRESS/CSTATUS/CFORCE/CDISP groups)"},
+    "V11-2": {"status": "COMPLETE", "description": "Contact output smoke — datacheck PASSED, contact output variables confirmed"},
+    "V11-3A": {
+      "status": "DATACHECK_PASSED_SOLVE_PARTIAL",
+      "description": "Rough grinding centerpoint — datacheck passed (multiple times, 0 errors). Solver converges stably (0 singularities) but rate is ~0.00002s/inc, making full solve impractical (~600h estimated). Contact IS establishing (4/7382 faces closed). Pretension step completes at 82N (90N target).",
+      "key_fix": "BI.234 Y=0 boundary constraint eliminates S4R belt rigid-body mode without artificial springs or stabilization",
+      "recommended_next": "Switch to *DYNAMIC, EXPLICIT or coarsen mesh (2mm contact zone)"
+    },
+    "V11-3B": {"status": "BLOCKED", "description": "Fine grinding centerpoint — awaiting V11-3A solver completion or explicit route"},
+    "V11-4": {"status": "BLOCKED", "description": "6 contact scenarios — awaiting centerpoint validation"},
+    "V11-5": {"status": "BLOCKED", "description": "Moving heat source DFLUX"},
+    "V11-6": {"status": "BLOCKED", "description": "Sequential thermal-mechanical residual stress"},
+    "V11-7": {"status": "BLOCKED", "description": "Archard wear integration"},
+    "V11-8": {"status": "BLOCKED", "description": "DOE regression and optimization"}
+  },
+  "technical_breakthroughs": {
+    "v10_audit": "Root cause NOT Contact-in-Assembly — it was missing *End Step keywords (4 of 5 steps)",
+    "contact_output_syntax": "*Contact Output uses group names: CSTRESS (CPRESS), CSTATUS, CFORCE (CNORMF), CDISP (COPEN)",
+    "section_scope": "*Solid Section only valid at Part or Instance scope; model-data scope rejected",
+    "elset_naming": "Period '.' forbidden in Assembly-level elset names",
+    "belt_rigid_body_fix": "Single-node Y=0 BC on BI.234 eliminates S4R belt rigid-body mode without adding artificial stiffness",
+    "v9_include_truncation": "V9 AllElems elset truncated by Abaqus 16-items/line limit — fixed with generate-based elset in Instance scope"
+  },
+  "solve_history": {
+    "iterations": 13,
+    "final_working_config": {
+      "constraint": "BI.234 Y=0 BC (rigid-body mode elimination)",
+      "step1": "Pretension: dt=0.001, stabilize=1e-6, 20 increments, belt force=82N",
+      "step2": "ContactApproach: dt=0.001, stabilize=1e-6, WP_RIGHT_RP Z=0.2mm",
+      "singularities": 0,
+      "contact_status": "Establishing (4/7382 faces closed, CPRESS>0)"
+    }
+  },
+  "artifacts": {
+    "working_inp": "inps/centerpoint/contact_v11_rough_center_final.inp",
+    "partial_odb_v4": "odb/smoke/v11_rough_v4.odb (Step 1 complete, 75MB)",
+    "partial_odb_v13": "odb/smoke/v11_rough_v13_partial.odb (contact establishing, 93MB)",
+    "final_report": "reports/V11_FINAL_EXECUTION_REPORT.md",
+    "execution_summary": "reports/execution_summary_v11.md"
+  }
+}
